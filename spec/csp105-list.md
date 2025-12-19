@@ -1,11 +1,3 @@
-# 105 Linguistic Primitives
-
-This list preserves the original numbering and main descriptor for each primitive. Optional annotations indicate approximate cognitive "in-use" period and first formal recognition.
-
----
-
-## Prehistory / Cognitive Origins (proto-language)
-
 1. Existence / Being (Prehistory – always)  
 2. Identity / Name (Prehistory – always)  
 3. Action / Event (Prehistory – always)  
@@ -18,35 +10,62 @@ This list preserves the original numbering and main descriptor for each primitiv
 10. Negation / Absence (Prehistory – always)  
 11. Direction / Orientation (Prehistory – always)  
 12. Possession / Ownership (Prehistory – 1000 BCE)  
+13. Communication / Signal (Prehistory – ~5000 BCE)  
+14. Modality / Capability (Prehistory – 1000 BCE)  
 15. Emotion / Feeling (Prehistory – always)  
 16. Identity / Role (Prehistory – always)  
+17. Intention / Desire (Prehistory – ~5000 BCE)  
 18. Aggregation / Grouping (Prehistory – 1000 BCE)  
 19. Boundary / Limit (Prehistory – 600 BCE)  
-21. Existence / Presence (Prehistory – 1000 BCE)  
+20. Existence / Presence (Prehistory – 1000 BCE)  
+21. Change / Transformation (Prehistory – always)  
+22. Identity / Class (Prehistory – ~1000 BCE)  
+23. Sequence / Order (Prehistory – 1000 BCE)  
 24. Measurement / Magnitude (Prehistory – 3000 BCE)  
 25. Comparison Value / Benchmark (Prehistory – 3000 BCE)  
-50. Resource / Material (Prehistory – 3000 BCE)  
-66. Representation / Symbol (Prehistory – 3000 BCE)  
-93. Mogri / Undifferentiated Potential (Prehistory – Present 2025)
-
----
-
-## Early Civilization / Written Math & Logic (c. 3000–500 BCE)
-
+26. Attribute Relationship / Correlation (Prehistory – 1000 BCE)  
+27. Persistence / Continuity (Prehistory – ~1000 BCE)  
+28. Separation / Distinction (Prehistory – 1000 BCE)  
+29. Scale / Proportion (Prehistory – 1000 BCE)  
+30. Connection / Network (Prehistory – 1000 BCE)  
+31. Change Rate / Dynamics (Prehistory – ~1000 BCE)  
+32. Potential / Latent State (Prehistory – always)  
+33. Observation / Detection (Prehistory – 1000 BCE)  
+34. Cause / Effect (Prehistory – 600 BCE)  
+35. Possibility / Contingency (Prehistory – 1000 BCE)  
+36. Constraint / Limitation (Prehistory – 1500 CE)  
+37. Threshold / Critical Point (Prehistory – 1500 CE)  
+38. Error / Anomaly (Prehistory – 1500 CE)  
+39. Correction / Adjustment (Prehistory – 1500 CE)  
+40. Process / Procedure (Prehistory – 1500 CE)  
+41. Transformation / Change Mechanism (Prehistory – 1500 CE)  
+42. Resource Management (Prehistory – 1800 BCE)  
 43. Probability / Likelihood (Prehistory – 1500 CE)  
-44. Causality / Mechanism (Prehistory – 1500 CE)  
-47. Process / Procedure (Prehistory – 1500 CE)  
-48. Signal Interpretation / Meaning (Prehistory – 1500 CE)  
+44. Causation / Mechanism (Prehistory – 1500–1600 CE)  
+45. Pattern / Regularity (Prehistory – 1000 BCE)  
+46. Symmetry / Balance (Prehistory – 1000 BCE)  
+47. Signal / Meaning (Prehistory – 1500 CE)  
+48. Interpretation / Understanding (Prehistory – 1500 CE)  
+49. Observation / Measurement (Prehistory – 1000 BCE)  
 50. Resource / Material (Prehistory – 3000 BCE)  
 51. Limitation / Deficiency (Prehistory – 3000 BCE)  
 52. Transformation Mechanism / Method (Prehistory – 1500 CE)  
 53. Comparison Attribute / Metric (Prehistory – 3000 BCE)  
+54. Adaptation / Adjustment (Prehistory – 1500 CE)  
 55. Temporal Relation / Sequence (Prehistory – 3000 BCE)  
-57. Flow / Movement (Prehistory – 3000 BCE)  
-58. Evaluation / Judgment (Prehistory – 600 BCE)  
+56. Flow / Movement (Prehistory – 3000 BCE)  
+57. Evaluation / Judgment (Prehistory – 600 BCE)  
+58. Quantification / Measurement (Prehistory – 3000 BCE)  
+59. Categorization / Classification (Prehistory – 1000 BCE)  
 60. Existential Quantification / Scope (Prehistory – 600 BCE)  
+61. Probability Assessment / Forecast (Prehistory – 1500 CE)  
 62. Pattern Recognition / Detection (Prehistory – 1500 CE)  
-63. Error / Anomaly (Prehistory – 1500 CE)  
+63. Error Detection / Anomaly Recognition (Prehistory – 1500 CE)  
+64. Logical Relation / Inference (Prehistory – 1500 BCE)  
+65. Hierarchy / Ordering (Prehistory – 1000 BCE)  
+66. Representation / Symbol (Prehistory – 3000 BCE)  
+67. Reference / Aboutness (Prehistory – 600 BCE)  
+68. Association / Linkage (Prehistory – 1000 BCE)  
 69. Constraint Satisfaction (Prehistory – 1500 CE)  
 70. Context / Framing (Prehistory – 600 BCE)  
 71. Agency / Actorhood (Prehistory – 600 BCE)  
@@ -57,7 +76,9 @@ This list preserves the original numbering and main descriptor for each primitiv
 76. Obligation / Requirement (Prehistory – 1500 CE)  
 77. Value / Worth (Prehistory – 1500 CE)  
 78. Trade-off / Cost (Prehistory – 1500 CE)  
+79. Factual / Reality (Prehistory – 1800–1900 CE)  
 80. Threshold / Phase Change (Prehistory – 1500 CE)  
+81. Representation / Symbolic Stand-in (Prehistory – 3000 BCE)  
 82. Knowledge / Justified Truth (Prehistory – 1500 CE)  
 83. Commitment / Binding Intent (Prehistory – 1500 CE)  
 84. Correction / Error Repair (Prehistory – 1500 CE)  
@@ -83,8 +104,6 @@ This list preserves the original numbering and main descriptor for each primitiv
 104. Process Termination (Prehistory – 1500–1600 CE)  
 105. Deviation / Error (Prehistory – 1500–1600 CE)
 
-
-
 ---
 
 *Notes:*  
@@ -97,6 +116,7 @@ This list preserves the original numbering and main descriptor for each primitiv
 
 
 
+---
 
 Expanded list with examples 
 
@@ -432,7 +452,9 @@ Examples: “Water boils at 100°C”, “Earth orbits the Sun”
 Definition: The point at which a qualitative change occurs.  
 Examples: water freezes at 0°C, critical mass in nuclear reactions  
 
-81. [Reserved / Missing]  
+81. Representation / Symbolic Stand-in (Prehistory – 3000 BCE)  
+Definition: An entity or sign that stands in for another thing, idea, or concept.  
+Examples: letters, icons, maps 
 
 82. Knowledge / Justified Truth (Prehistory – 1500 CE)  
 Definition: Information that is both true and supported by evidence.  
