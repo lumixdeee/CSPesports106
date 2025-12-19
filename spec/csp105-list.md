@@ -69,6 +69,7 @@ This list preserves the original numbering and main descriptor for each primitiv
 90. Termination / Closure (Prehistory – 1500 CE)  
 91. Zero / Null (Prehistory – 300–500 CE)  
 92. One / First Distinction (Prehistory – 3000 BCE)  
+93. Mogri / Undifferentiated Potential (Prehistory – Present 2025)  
 94. Observer / Agent (Prehistory – 1500 CE)  
 95. Noise / Signal Split (Prehistory – 1500 CE)  
 96. Default / Assumption (Prehistory – 1500 CE)  
@@ -82,6 +83,8 @@ This list preserves the original numbering and main descriptor for each primitiv
 104. Process Termination (Prehistory – 1500–1600 CE)  
 105. Deviation / Error (Prehistory – 1500–1600 CE)
 
+
+
 ---
 
 *Notes:*  
@@ -90,6 +93,9 @@ This list preserves the original numbering and main descriptor for each primitiv
 - Dates are approximate “in-use” (cognitive emergence) and “recognised” (first formal naming or systemisation).  
 - Mogri (93) is treated as the foundational container for all other primitives.  
 - This format is ready for GitHub Markdown — headings, numbered lists, and parenthetical notes.  
+
+
+
 
 
 Expanded list with examples 
