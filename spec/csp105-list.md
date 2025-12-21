@@ -91,7 +91,7 @@ CONCISE LIST
 76. Obligation / Requirement (Prehistory – 1500 CE)  
 77. Value / Worth (Prehistory – 1500 CE)  
 78. Trade-off / Cost (Prehistory – 1500 CE)  
-79. Factual / Reality (Prehistory – 1800–1900 CE)  
+79. Irgom — placeholder for future concept  
 80. Threshold / Phase Change (Prehistory – 1500 CE)  
 81. Representation / Symbolic Stand-in (Prehistory – 3000 BCE)  
 82. Knowledge / Justified Truth (Prehistory – 1500 CE)  
@@ -459,9 +459,9 @@ Examples: money, moral good, sentimental keepsake
 Definition: The balance or compromise between competing factors.  
 Examples: speed vs safety, cost vs quality, effort vs reward  
 
-79. Factual / Reality (Prehistory – 1800–1900 CE)  
-Definition: The state of being actual or true in the world.  
-Examples: “Water boils at 100°C”, “Earth orbits the Sun”  
+79. Irgom — placeholder for future concept 
+Definition: If a new primative is needed, this is the place for it.  
+Examples: “new prime a,new prime b”  
 
 80. Threshold / Phase Change (Prehistory – 1500 CE)  
 Definition: The point at which a qualitative change occurs.  
