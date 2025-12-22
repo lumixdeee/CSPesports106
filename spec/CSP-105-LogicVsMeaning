@@ -58,3 +58,61 @@ RULE {
     Validity ≠ Truth
     Coherence ≠ Correctness
 }
+
+====================================================================================
+
+Readable Version
+
+LOGIC vs SPEECH / MEANING
+
+LOGIC
+- A formal system of symbols and rules.
+- Operates on structure, not content.
+- Cares about validity: if premises are true, does the conclusion follow?
+- Blind to context, intent, tone, culture, or consequence.
+- Does not know what words mean; only how symbols relate.
+
+SPEECH / MEANING
+- Natural language used by humans.
+- Operates on meaning, context, and shared assumptions.
+- Cares about effect: what is understood, implied, or persuaded.
+- Allows ambiguity, metaphor, irony, and drift.
+- Meaning changes with speaker, listener, and situation.
+
+WHAT GOES WRONG WHEN THEY ARE CONFLATED
+
+CATEGORY ERROR
+- Treating fluent speech as if it were formal proof.
+- “It sounds logical” is mistaken for “it is valid”.
+
+SEMANTIC DRIFT
+- Words quietly change meaning mid-argument.
+- Conclusions appear derived but rest on unstable terms.
+
+RHETORIC AS PROOF
+- Persuasion, confidence, or elegance replaces inference.
+- Agreement is produced without justification.
+
+FALSE OBJECTIVITY
+- Disagreement is labeled “illogical” when it is really about meaning,
+  values, or unshared assumptions.
+
+AI FAILURE MODE
+- Fluent language output is mistaken for reasoning.
+- Coherence is over-trusted as correctness.
+
+CORRECTIVE DISCIPLINE
+
+Ask three separate questions, in order:
+1. Is the inference structurally valid?        (logic)
+2. Are the terms stable and shared?             (semantics)
+3. What is being done with the speech act?      (pragmatics)
+
+RULES TO KEEP DISTINCT
+
+- Logic is not meaning.
+- Validity is not truth.
+- Coherence is not correctness.
+- Speech can suggest without proving.
+
+
