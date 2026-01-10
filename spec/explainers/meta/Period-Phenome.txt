@@ -80,5 +80,16 @@ ALLOWED (for sanity check):
 # - audiences do NOT forgive premature precision
 # - if it sounds like acting class before 200k, delete it
 # - if someone can be teased for pronunciation, you are post-200k
+
+
+
+
+3 cavemen in a bar
+
+ummus
+em hest
+i’m the highest
+
+
 (narrative)
 
