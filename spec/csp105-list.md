@@ -459,9 +459,9 @@ Examples: money, moral good, sentimental keepsake
 Definition: The balance or compromise between competing factors.  
 Examples: speed vs safety, cost vs quality, effort vs reward  
 
-79. Irgom — placeholder for future concept
+79. Irgom — placeholder for future concept  
 Definition: If a new primative is needed, this is the place for it.  
-Examples: “new prime a,new prime b”  
+Examples: “new prime a,new prime b”
 
 81. Threshold / Phase Change (Prehistory – 1500 CE)  
 Definition: The point at which a qualitative change occurs.  
