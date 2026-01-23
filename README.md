@@ -41,7 +41,9 @@ Maintain consistency and avoid drifting meanings.
 
 **Keywords:** CSP-105, Mogri, example, tutorial, semantic, AI, chatGPT, modelling, myth, meme
 
-This repository contains hands-on experiments, notes, and explorations related to CSP-105 and Mogri concepts...
+This repository contains hands-on experiments, notes, and explorations related to CSP-105 and Mogri concepts...   
+
+See /units/stock/logo for freely usable visual labels (mogri, esports, etc)
 
 ---  
 
