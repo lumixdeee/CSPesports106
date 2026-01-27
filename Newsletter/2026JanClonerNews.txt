@@ -20,8 +20,8 @@ and hence the github to host it. The dates are all wrong for the semantic primit
 
 What do you all use this stuff for? I'm mostly using this git to build up a map of   
 stuff I'm interested in, which is a lot, and vaguely working out how to 'insert' mogri   
-into 'the world', as it were. Apparently this is the serious end, which is fine,  
-here on github, and the general push for impressions is T-shirts and memes all the way, so 100K today, for example.
+into 'the world', as it were. Apparently this is the serious end, which is fine, here on github,  
+and the general push for impressions is T-shirts and memes all the way, so 100K today, for example.
 
 Dragonruntime - I use this, and I've started putting any assets created during this 'work' on this repo.  
 No idea yet how to explain how to actually use the system, if indeed that is even possible.  
