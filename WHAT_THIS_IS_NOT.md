@@ -113,7 +113,9 @@ From a Linguistics Perspective,
 
 https://www.isko.org/cyclo/primitives.htm
 
-https://intranet.secure.griffith.edu.au/__data/assets/pdf_file/0018/346032/150_NSM_CanonicalSentences_v5_05_2017.pdf
+https://intranet.secure.griffith.edu.au/__data/assets/pdf_file/0018/346032/150_NSM_CanonicalSentences_v5_05_2017.pdf  
+
+https://www.oreateai.com/blog/the-curious-case-of-transmogrification-more-than-just-a-word/9e8d762ccc7885b6db58f01ef9710bc9  
 
 ---
 
