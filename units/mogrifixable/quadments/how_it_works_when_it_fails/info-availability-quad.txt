@@ -1,0 +1,45 @@
+The following chatGPT excerpt shows that the creation of 'quadments' is not  
+a case of 'shooting fish in a barrel'.
+
+
+info availability quad:   
+
+axes - visible/occulted - available/missing  
+  
+make such a quad pls, fill in the four words to represent each type of info  
+private, public, .... , ...... fill in the gaps  
+
+
+ ______________________________________________
+| how?\which?  | available       | unavailable |
+|______________|_________________|_____________|
+| visible       | public         | private     |
+|______________|_________________|_____________|
+| occulted      | hidden         | unknown     |
+|______________|_________________|_____________|
+
+
+  So:
+
+Visible + available → public
+
+Visible + unavailable → private
+
+Occulted + available → hidden
+
+Occulted + unavailable → unknown  
+
+
+so in other words, no pun intended,  
+there is no missing forth that needs to be filled by mogri here?   
+
+
+Exactly—no hidden Mogri twist needed here. 😏
+
+The four quadrants are complete as-is: public, private, hidden, unknown.  
+Mogri doesn’t sneak in to fill a fifth;  
+the “info space” is already fully mapped by the axes you set.
+
+If anything, you could say Mogri just… hovers over the whole quad,  
+subtly blurring the lines between hidden and unknown.  
+But that’s flavor, not a missing label.
