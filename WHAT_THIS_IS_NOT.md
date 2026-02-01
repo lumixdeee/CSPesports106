@@ -13,6 +13,14 @@ If you are looking for a single model that unifies all experience, this is not i
 
 ---
 
+# Mogri is not 'AI slop'
+
+Authorship is human.
+AI functioned solely as a grammatical accelerator, analogous to a reference linguist.  
+No creative agency was delegated.
+
+---
+
 ## This Is Not a Belief System
 
 There is nothing here you are expected to believe.
