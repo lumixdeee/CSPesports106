@@ -125,5 +125,7 @@ https://intranet.secure.griffith.edu.au/__data/assets/pdf_file/0018/346032/150_N
 
 https://www.oreateai.com/blog/the-curious-case-of-transmogrification-more-than-just-a-word/9e8d762ccc7885b6db58f01ef9710bc9  
 
+https://www.yahoo.com/lifestyle/articles/word-day-transmogrify-word-describes-114525514.html
+
 ---
 
