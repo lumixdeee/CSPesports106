@@ -463,107 +463,107 @@ Examples: speed vs safety, cost vs quality, effort vs reward
 Definition: If a new primative is needed, this is the place for it.  
 Examples: “new prime a,new prime b”
 
-81. Threshold / Phase Change (Prehistory – 1500 CE)  
+80. Threshold / Phase Change (Prehistory – 1500 CE)  
 Definition: The point at which a qualitative change occurs.  
 Examples: water freezes at 0°C, critical mass in nuclear reactions  
 
-82. Representation / Symbolic Stand-in (Prehistory – 3000 BCE)  
+81. Representation / Symbolic Stand-in (Prehistory – 3000 BCE)  
 Definition: An entity or sign that stands in for another thing, idea, or concept.  
 Examples: letters, icons, maps 
 
-83. Knowledge / Justified Truth (Prehistory – 1500 CE)  
+82. Knowledge / Justified Truth (Prehistory – 1500 CE)  
 Definition: Information that is both true and supported by evidence.  
 Examples: scientific laws, historical facts, proven theorems  
 
-84. Commitment / Binding Intent (Prehistory – 1500 CE)  
+83. Commitment / Binding Intent (Prehistory – 1500 CE)  
 Definition: A resolved intention or dedication to act.  
 Examples: signing a contract, promise keeping, long-term plan  
 
-85. Correction / Error Repair (Prehistory – 1500 CE)  
+84. Correction / Error Repair (Prehistory – 1500 CE)  
 Definition: The act of rectifying deviations or mistakes.  
 Examples: proofreading, debugging, adjusting strategy  
 
-86. Stability / Equilibrium (Prehistory – 1500 CE)  
+85. Stability / Equilibrium (Prehistory – 1500 CE)  
 Definition: A state of balance or resistance to change.  
 Examples: chemical equilibrium, social stability, standing posture  
 
-87. Belief / Assumed Truth (Prehistory – 600 BCE)  
+86. Belief / Assumed Truth (Prehistory – 600 BCE)  
 Definition: Acceptance of a proposition as true without full proof.  
 Examples: religious belief, superstition, confidence in a friend  
 
-88. Disagreement / Conflict (Prehistory – 600 BCE)  
+87. Disagreement / Conflict (Prehistory – 600 BCE)  
 Definition: The presence of opposing views or forces.  
 Examples: argument, war, scientific debate  
 
-89. Alignment / Agreement (Prehistory – 600 BCE)  
+88. Alignment / Agreement (Prehistory – 600 BCE)  
 Definition: Coordination or harmony between entities or ideas.  
 Examples: synchronized swimming, legal consensus, shared goals  
 
-90. Compression / Abstraction Gain (Prehistory – 1500 CE)  
+89. Compression / Abstraction Gain (Prehistory – 1500 CE)  
 Definition: The reduction of complexity while retaining meaning.  
 Examples: shorthand, data compression, conceptual models  
 
-91. Termination / Closure (Prehistory – 1500 CE)  
+90. Termination / Closure (Prehistory – 1500 CE)  
 Definition: The end of a process or the completion of an event.  
 Examples: project finish, death, sunset  
 
-92. Zero / Null (Prehistory – 300–500 CE)  
+91. Zero / Null (Prehistory – 300–500 CE)  
 Definition: The representation of nothingness or absence.  
 Examples: 0 in counting, empty set, null pointer  
 
-93. One / First Distinction (Prehistory – 3000 BCE)  
+92. One / First Distinction (Prehistory – 3000 BCE)  
 Definition: The initial unit or singular entity distinguished from none.  
 Examples: 1 apple, first element, single event  
 
-94. Mogri / Undifferentiated Potential (Prehistory – Present 2025)  
+93. Mogri / Undifferentiated Potential (Prehistory – Present 2025)  
 Definition: The foundational proto-cognitive substrate that underlies all distinctions.  
 Examples: raw thought potential, pre-conceptual awareness, cognitive blank slate  
 
-95. Observer / Agent (Prehistory – 1500 CE)  
+94. Observer / Agent (Prehistory – 1500 CE)  
 Definition: An entity capable of perceiving or acting.  
 Examples: person noticing events, AI analyzing data, animal hunting  
 
-96. Noise / Signal Split (Prehistory – 1500 CE)  
+95. Noise / Signal Split (Prehistory – 1500 CE)  
 Definition: Distinguishing meaningful information from irrelevant data.  
 Examples: filtering background static, detecting trends in data, focusing attention  
 
-97. Default / Assumption (Prehistory – 1500 CE)  
+96. Default / Assumption (Prehistory – 1500 CE)  
 Definition: Presumed state or value when information is incomplete.  
 Examples: empty form fields, assumed neutrality, implicit rules  
 
-98. Counterfactual / Alternative Scenario (Prehistory – 1500 CE)  
+97. Counterfactual / Alternative Scenario (Prehistory – 1500 CE)  
 Definition: Hypothetical situations differing from reality.  
 Examples: “If it had rained, crops would grow”, alternate decisions  
 
-99. Boundary / Limit (Prehistory – 3000 BCE)  
+98. Boundary / Limit (Prehistory – 3000 BCE)  
 Definition: The edge, restriction, or extent of an entity or system.  
 Examples: fence, maximum speed, personal space  
 
-100. Perspective / Point of View (Prehistory – 600 BCE)  
+99. Perspective / Point of View (Prehistory – 600 BCE)  
 Definition: The angle or context from which observation or reasoning occurs.  
 Examples: eyewitness view, cultural lens, camera angle  
 
-101. Alignment / Agreement (Prehistory – 1500 CE)  
+100. Alignment / Agreement (Prehistory – 1500 CE)  
 Definition: Coordination or harmonization of actions or ideas.  
 Examples: synchronized efforts, legal consensus, shared goals  
 
-102. Factual / Reality (Prehistory – 1800–1900 CE)  
+101. Factual / Reality (Prehistory – 1800–1900 CE)  
 Definition: The state of being actual, true, or occurring.  
 Examples: water boils at 100°C, Earth is round  
 
-103. Causation / Mechanism (Prehistory – 1500–1600 CE)  
+102. Causation / Mechanism (Prehistory – 1500–1600 CE)  
 Definition: The relationship or process by which one event produces another.  
 Examples: gravity causes falling, enzymes catalyze reactions, training improves skill  
 
-104. Resource / Capacity (Prehistory – 1800–1900 CE)  
+103. Resource / Capacity (Prehistory – 1800–1900 CE)  
 Definition: The usable potential or supply of something.  
 Examples: energy in a battery, human labor, available memory  
 
-105. Process Termination (Prehistory – 1500–1600 CE)  
+104. Process Termination (Prehistory – 1500–1600 CE)  
 Definition: The completion or end of a sequence or activity.  
 Examples: project finished, machine stopped, lesson concluded  
 
-106. Deviation / Error (Prehistory – 1500–1600 CE)  
+105. Deviation / Error (Prehistory – 1500–1600 CE)  
 Definition: The difference between expected and observed states.  
 Examples: miscalculation, measurement error, behavior anomaly
 
