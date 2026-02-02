@@ -7,8 +7,8 @@ Both outcomes are fine.
 
 Related spaces (for reference)
 
-These are low-traffic, experimental subreddits where fragments of this are being explored.
-Reading only is normal.
+These are low-traffic, experimental subreddits where fragments of this are being explored.  
+Reading only is normal; joining is optional.
 
 r/mogri  
 r/epicmythic  
