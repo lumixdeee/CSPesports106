@@ -10,6 +10,6 @@ Related spaces (for reference)
 These are low-traffic, experimental subreddits where fragments of this are being explored.
 Reading only is normal.
 
-r/mogri
-r/epicmythic
+r/mogri  
+r/epicmythic  
 r/linguistichumorless
