@@ -1,0 +1,1 @@
+mogri-classics have moved to https://github.com/lumixdeee/mogri/tree/main/units/mogri-classics
