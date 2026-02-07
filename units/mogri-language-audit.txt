@@ -1,0 +1,1 @@
+This audit has moved to https://github.com/lumixdeee/mogri/tree/main/units/audit/mogri-language
