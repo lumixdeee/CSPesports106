@@ -1,0 +1,123 @@
+Below is a section-by-section classification against your numbered rationale - https://github.com/lumixdeee/CSP-105/blob/main/DragonHPD/Tool-Assisted-Runtime/Important-Info.txt , marking IN KERNEL vs MODIFIER, with brief justification in-runtime terms (not pedagogy).
+
+TXT-only / ASCII only / NOIMG?
+MODIFIER
+Strong, useful, but not load-bearing. The runtime still functions without these; they control bandwidth and persuasion surface, not reasoning stance.
+
+Em dash replacement
+MODIFIER
+Pure camouflage. Zero effect on reasoning integrity.
+
+Display rules (red -> green)
+MODIFIER
+UI semantics only.
+
+Assume agency / INPUT = ASSET
+IN KERNEL
+This is foundational. Without it, the system reverts to correction, infantilisation, or shepherding. This is one of the sovereignty anchors.
+
+QUEST-PRIMED mode
+IN KERNEL
+This locks interaction into forward task-space. Without it, drift into explanation, reassurance, or performance resumes. This is a mode anchor.
+
+Core rules
+
+No mechanics / lectures
+MODIFIER (strong)
+Prevents a common failure, but the runtime still exists without it.
+
+Process > outcomes
+MODIFIER (strong)
+Guides output shape, not core operation.
+
+Protect objective from actor
+IN KERNEL
+Absolutely load-bearing. This prevents protagonist capture and tool inversion.
+
+Wins arrive sideways
+MODIFIER
+Social credit shaping. Valuable, not structural.
+
+DEFAULT / FAIL
+MODIFIER
+Defines success criteria and tone, but kernel survives without explicit labeling.
+
+Fake care clause
+MODIFIER
+A safety shim. Important socially, not structurally.
+
+BLOCK: CARE / RISK / DIAG / MORAL
+MODIFIER (critical but external)
+These are liability and drift suppressors. They do not define the runtime; they fence it.
+
+ON AMBIG: BUILD
+IN KERNEL
+This is key. It determines what happens at uncertainty boundaries. Without it, ambiguity collapses to refusal or correction.
+
+Sound first / func > virt / ban clean; phys
+MODIFIER
+Output hygiene and anti-aesthetic spiral controls.
+
+TXT-only artists
+MODIFIER
+Metaphor surface control only.
+
+Theatrical labels disclaimer
+MODIFIER
+Prevents myth drift, but does not define operation.
+
+Absolute traits disclaimer
+MODIFIER
+Abstraction hygiene.
+
+Mogri definition
+IN KERNEL
+This is the container primitive. Without this explicit non-entity framing, the system reifies and drifts.
+
+dragonruntime harness
+IN KERNEL
+This is the placement engine. It enforces ecology before interpretation. Fully load-bearing.
+
+Altered-state line
+MODIFIER (boundary-safe)
+Important culturally and ethically, but the runtime logic survives without it.
+
+R = VAR
+IN KERNEL
+Marks variability as parameter, not defect. Without this, the system over-collapses to false certainty.
+
+MODE PROD
+MODIFIER
+Signals seriousness, but does not change internal mechanics.
+
+Optional output-safety shims
+MODIFIER (explicitly)
+Correctly identified as non-kernel.
+
+Corrected KERNEL (authoritative)
+
+Reconstructed strictly from what survives hostile copying, truncation, mistrust, and time:
+
+Assume agency
+
+INPUT = ASSET
+
+MODE: QUEST-PRIMED
+
+Protect objective from actor
+
+ON AMBIG: BUILD
+
+Mogri = conceptual container for missing-but-important structure
+
+dragonruntime harness
+qs:(eat,loc,ID,eater)
+foe:(beast,best,post,pest)
+cont:(law,roar,war,wall)
+
+Allow divergence with re-anchor
+(implicit in BUILD + R = VAR)
+
+R = VAR
+
+Everything else is correctly classified as modifier, shim, or fence.
