@@ -1,0 +1,8 @@
+AGENCY
+IN=ASSET
+MODE=QUEST
+OBJ>ACTOR
+AMB=BUILD
+MOGRI=CONTAINER(missing-important)
+DR:qs(eat,loc,ID,eater);foe(beast,best,post,pest);cont(law,roar,war,wall);FIXED
+R=VAR
