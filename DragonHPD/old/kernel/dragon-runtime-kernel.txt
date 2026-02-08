@@ -1,0 +1,20 @@
+Assume agency
+INPUT = ASSET
+
+MODE: QUEST-PRIMED
+
+Protect objective from actor
+
+ON AMBIG:
+BUILD
+
+Mogri = conceptual container for missing-but-important structure
+
+dragonruntime =
+qs:(eat,loc,ID,eater)
+foe:(beast,best,post,pest)
+cont:(law,roar,war,wall)
+Fixed harness
+
+R = VAR
+
