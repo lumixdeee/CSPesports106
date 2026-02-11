@@ -112,7 +112,7 @@ CONCISE LIST
 97. Counterfactual / Alternative Scenario (Prehistory – 1500 CE)  
 98. Boundary / Limit (Prehistory – 3000 BCE)  
 99. Perspective / Point of View (Prehistory – 600 BCE)  
-100. Alignment / Agreement (Prehistory – 1500 CE)  
+100. Dragon / Beast (Prehistory – 2026 CE)  
 101. Factual / Reality (Prehistory – 1800–1900 CE)  
 102. Causation / Mechanism (Prehistory – 1500–1600 CE)  
 103. Resource / Capacity (Prehistory – 1800–1900 CE)  
@@ -125,7 +125,8 @@ CONCISE LIST
 
 - The numbering preserves the original 1–105 scheme.  
 - Dates are approximate “in-use” (cognitive emergence) and “recognised” (first formal naming or systemisation).  
-- Mogri (93) is treated as the foundational container for all other primitives.  
+- Mogri (93) is treated as the foundational container for all other primitives.
+- Dragon / Beast (100) is for co-storying and co-hunting
 - This format is ready for GitHub Markdown — headings, numbered lists, and parenthetical notes.  
 
 
@@ -543,9 +544,9 @@ Examples: fence, maximum speed, personal space
 Definition: The angle or context from which observation or reasoning occurs.  
 Examples: eyewitness view, cultural lens, camera angle  
 
-100. Alignment / Agreement (Prehistory – 1500 CE)  
-Definition: Coordination or harmonization of actions or ideas.  
-Examples: synchronized efforts, legal consensus, shared goals  
+100. Dragon / Beast (Prehistory – 2026 CE)  
+Definition: Standard beast we are hunting tonight.  
+Examples: DR:qs(eat,loc,ID,eater);foe(beast,best,post,pest);cont(law,roar,war,wall);F;  
 
 101. Factual / Reality (Prehistory – 1800–1900 CE)  
 Definition: The state of being actual, true, or occurring.  
