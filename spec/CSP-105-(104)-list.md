@@ -108,7 +108,7 @@ CONCISE LIST
 93. Mogri / Undifferentiated Potential (Prehistory – Present 2025)  
 94. Observer / Agent (Prehistory – 1500 CE)  
 95. Noise / Signal Split (Prehistory – 1500 CE)  
-96. Default / Assumption (Prehistory – 1500 CE)  
+96. Spare / Free Slot (Prehistory – now CE)  
 97. Counterfactual / Alternative Scenario (Prehistory – 1500 CE)  
 98. Amphibiance / Doublation (Prehistory – 2026 BCE)  
 99. Perspective / Point of View (Prehistory – 600 BCE)  
@@ -528,9 +528,9 @@ Examples: person noticing events, AI analyzing data, animal hunting
 Definition: Distinguishing meaningful information from irrelevant data.  
 Examples: filtering background static, detecting trends in data, focusing attention  
 
-96. Default / Assumption (Prehistory – 1500 CE)  
-Definition: Presumed state or value when information is incomplete.  
-Examples: empty form fields, assumed neutrality, implicit rules  
+79. Spare — placeholder for future concept  
+Definition: If a new thing is needed, this is a place for it.  
+Examples: “new thing a,new tool b”  
 
 97. Counterfactual / Alternative Scenario (Prehistory – 1500 CE)  
 Definition: Hypothetical situations differing from reality.  
