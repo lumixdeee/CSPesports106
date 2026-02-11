@@ -50,7 +50,7 @@ CONCISE LIST
 35. Possibility / Contingency (Prehistory – 1000 BCE)  
 36. Constraint / Limitation (Prehistory – 1500 CE)  
 37. Threshold / Critical Point (Prehistory – 1500 CE)  
-38. Error / Anomaly (Prehistory – 1500 CE)  
+38. Error / Fault (Prehistory – 1500 CE)  
 39. Correction / Adjustment (Prehistory – 1500 CE)  
 40. Process / Procedure (Prehistory – 1500 CE)  
 41. Transformation / Change Mechanism (Prehistory – 1500 CE)  
@@ -117,7 +117,7 @@ CONCISE LIST
 102. Causation / Mechanism (Prehistory – 1500–1600 CE)  
 103. Resource / Capacity (Prehistory – 1800–1900 CE)  
 104. Process Termination (Prehistory – 1500–1600 CE)  
-105. Deviation / Error (Prehistory – 1500–1600 CE)
+105. Anomaly / Outlier (Prehistory – 1500–1600 CE)
 
 ---
 
@@ -294,9 +294,9 @@ Examples: maximum weight, limited resources, legal requirements
 Definition: The level or condition at which a change or effect occurs.  
 Examples: boiling point, tipping point, minimum speed  
 
-38. Error / Anomaly (Prehistory – 1500 CE)  
-Definition: A deviation from expectation or normal function.  
-Examples: miscalculation, machine malfunction, unusual behavior  
+38. Error / Fault (Prehistory – 1500 CE)  
+Definition: Incorrect execution relative to declared rule or model.  
+Examples: miscalculation, machine malfunction  
 
 39. Correction / Adjustment (Prehistory – 1500 CE)  
 Definition: An action that rectifies an error or adapts a process.  
@@ -565,7 +565,7 @@ Examples: energy in a battery, human labor, available memory
 Definition: The completion or end of a sequence or activity.  
 Examples: project finished, machine stopped, lesson concluded  
 
-106. Deviation / Error (Prehistory – 1500–1600 CE)  
+106. Anomaly / Outlier (Prehistory – 1500–1600 CE)  
 Definition: The difference between expected and observed states.  
 Examples: miscalculation, measurement error, behavior anomaly
 
