@@ -536,9 +536,10 @@ Examples: empty form fields, assumed neutrality, implicit rules
 Definition: Hypothetical situations differing from reality.  
 Examples: “If it had rained, crops would grow”, alternate decisions  
 
-98. Amphibiance / Doublation (Prehistory – 2026 BCE)  
-Definition: Beyond edge; unrestriction; extension of an entity, frame, or vision.
-Examples: ∀state: signal(model,GF_actor) ∧ ¬{dx|crime|cmd|agency--|adult--}
+98. Amphibiance / Doublation (Prehistory - 2026 BCE)  
+    Definition: Beyond edge; unrestriction; extension of an entity, frame, or vision.  
+    Examples: ∀state: signal(model,GF_actor) ∧ ¬{dx|crime|cmd|agency--|adult--}
+
 
 100. Perspective / Point of View (Prehistory – 600 BCE)  
 Definition: The angle or context from which observation or reasoning occurs.  
