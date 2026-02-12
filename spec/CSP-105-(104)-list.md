@@ -172,8 +172,8 @@ Examples: on the table, under the bridge, at home
 Definition: The ordering or duration of events.  
 Examples: before sunrise, after lunch, two hours ago  
 
-8. Causality / Mechanism (Prehistory – 600 BCE)
-Definition: One event produces another with an identified mechanism.
+8. Causality / Mechanism (Prehistory – 600 BCE)   
+Definition: One event produces another with an identified mechanism.   
 Examples: gravity causes falling, enzymes catalyze reactions, training improves skill  
 
 9. Comparison / Relation (Prehistory – 600 BCE)  
