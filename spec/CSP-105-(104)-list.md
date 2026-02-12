@@ -78,7 +78,7 @@ CONCISE LIST
 63. Error Detection / Anomaly Recognition (Prehistory – 1500 CE)  
 64. Logical Relation / Inference (Prehistory – 1500 BCE)  
 65. Hierarchy / Ordering (Prehistory – 1000 BCE)  
-66. Representation / Symbol (Prehistory – 3000 BCE)  
+66. Story / Narrativization (Prehistory – 3000 BCE)  
 67. Reference / Aboutness (Prehistory – 600 BCE)  
 68. Association / Linkage (Prehistory – 1000 BCE)  
 69. Constraint Satisfaction (Prehistory – 1500 CE)  
@@ -406,9 +406,9 @@ Examples: syllogism, if-then reasoning, rule-based deduction
 Definition: Organization of elements by rank, level, or importance.  
 Examples: family tree, corporate structure, taxonomic classification  
 
-66. Representation / Symbol (Prehistory – 3000 BCE)  
-Definition: A sign or entity that stands for something else.  
-Examples: letters, icons, maps  
+66. Story / Narrativization  
+Definition: The organization of events into agent-centered, tension-bearing sequences.  
+Examples: hero vs villain arc; “the project failed because…”; mythic quest; courtroom case framing. 
 
 67. Reference / Aboutness (Prehistory – 600 BCE)  
 Definition: The property of pointing to or denoting something.  
