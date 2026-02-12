@@ -557,15 +557,15 @@ Examples: water boils at 100°C, Earth is round
 Definition: One event appears to produce another without an identified mechanism.
 Examples: herb reduces fever, full moon linked to behavior, method correlates with improvement
 
-104. Resource / Capacity (Prehistory – 1800–1900 CE)  
+105. Resource / Capacity (Prehistory – 1800–1900 CE)  
 Definition: The usable potential or supply of something.  
 Examples: energy in a battery, human labor, available memory  
 
-105. Process Termination (Prehistory – 1500–1600 CE)  
+106. Process Termination (Prehistory – 1500–1600 CE)  
 Definition: The completion or end of a sequence or activity.  
 Examples: project finished, machine stopped, lesson concluded  
 
-106. Anomaly / Outlier (Prehistory – 1500–1600 CE)  
+107. Anomaly / Outlier (Prehistory – 1500–1600 CE)  
 Definition: The difference between expected and observed states.  
 Examples: miscalculation, measurement error, behavior anomaly
 
