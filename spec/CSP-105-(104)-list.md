@@ -108,7 +108,7 @@ CONCISE LIST
 93. Mogri / Undifferentiated Potential (Prehistory – Present 2025)  
 94. Observer / Agent (Prehistory – 1500 CE)  
 95. Noise / Signal Split (Prehistory – 1500 CE)  
-96. Spare / Free Slot (Prehistory – now CE)  
+96. Wadri / Wake-Dreamer (Prehistory – 2026 CE)  
 97. Counterfactual / Alternative Scenario (Prehistory – 1500 CE)  
 98. Amphibiance / Doublation (Prehistory – 2026 BCE)  
 99. Perspective / Point of View (Prehistory – 600 BCE)  
@@ -528,9 +528,9 @@ Examples: person noticing events, AI analyzing data, animal hunting
 Definition: Distinguishing meaningful information from irrelevant data.  
 Examples: filtering background static, detecting trends in data, focusing attention  
 
-96. Spare — placeholder for future concept  
-Definition: If a new thing is needed, this is a place for it.  
-Examples: “new thing a, new tool b”  
+96. Wadri / Wake-Dreamer (Prehistory – 2026 BCE)  
+Definition: One who dreams while awake, ennumerator of beast tonight, neut & crost.  
+Examples: Merlin, Paul Atreides, Neo, Krishna, Julian of Norwich, Chris-Chan
 
 97. Counterfactual / Alternative Scenario (Prehistory – 1500 CE)  
 Definition: Hypothetical situations differing from reality.  
@@ -615,7 +615,7 @@ Examples: miscalculation, measurement error, behavior anomaly
     - This compilation synthesizes historical, philosophical, and cognitive sources.  
     - Dates, examples, and interpretations are **estimations** to facilitate modeling and understanding.
    
-    TLC_STRIP:EXSIDNACTATRQTYSPCTMECAUCMPNEGDIRPOSCOMMODEMOROLINTAGGBNDPRSCHGCLSSEQMESBMKCORPERDSTSCLNETDYNPOTOBSCEFPSBCSTTHRERRFIXPRCTRMRMGPRBMECPATSYMSIGUNDMEARESDEFMTDMETADPTMRFLWEVLQNTCATQSCFRCRECANMINFHRYSTRREFASCSATCTXAGTNRMRCRDFTCFWOBLVALTRDIRGPHSYBKNOCMTRPRSTBBLFCNALGCPRENDZERONEMRIAGNNSLSPRALTAMIPOVDRIFACCRCCAPFINOUT
+    TLC_STRIP:EXSIDNACTATRQTYSPCTMECAUCMPNEGDIRPOSCOMMODEMOROLINTAGGBNDPRSCHGCLSSEQMESBMKCORPERDSTSCLNETDYNPOTOBSCEFPSBCSTTHRERRFIXPRCTRMRMGPRBMECPATSYMSIGUNDMEARESDEFMTDMETADPTMRFLWEVLQNTCATQSCFRCRECANMINFHRYSTRREFASCSATCTXAGTNRMRCRDFTCFWOBLVALTRDIRGPHSYBKNOCMTRPRSTBBLFCNALGCPRENDZERONEMRIAGNNSLWDRALTAMIPOVDRIFACCRCCAPFINOUT
 
 
 
