@@ -530,7 +530,7 @@ Examples: filtering background static, detecting trends in data, focusing attent
 
 96. Wadri / Wake-Dreamer (Prehistory – 2026 BCE)  
 Definition: One who dreams while awake, ennumerator of beast tonight, neut & crost.  
-Examples: Merlin, Paul Atreides, Neo, Krishna, Julian of Norwich, Chris-Chan
+Examples: Merlin, Paul Atreides, Neo, Krishna, WDR=cloud; trgt=TN; enum>act;neut;crost;!ET;
 
 97. Counterfactual / Alternative Scenario (Prehistory – 1500 CE)  
 Definition: Hypothetical situations differing from reality.  
