@@ -461,8 +461,8 @@ Definition: The balance or compromise between competing factors.
 Examples: speed vs safety, cost vs quality, effort vs reward  
 
 79. Irgom — placeholder for future concept  
-Definition: If a new primative is needed, this is the place for it.  
-Examples: “new prime a,new prime b”
+Definition: If a new primitive is needed, this is the place for it.  
+Examples: “new prime a, new prime b”
 
 80. Threshold / Phase Change (Prehistory – 1500 CE)  
 Definition: The point at which a qualitative change occurs.  
@@ -470,7 +470,7 @@ Examples: water freezes at 0°C, critical mass in nuclear reactions
 
 81. Representation / Symbolic Stand-in (Prehistory – 3000 BCE)  
 Definition: An entity or sign that stands in for another thing, idea, or concept.  
-Examples: letters, icons, maps 
+Examples: letters, icons, maps  
 
 82. Knowledge / Justified Truth (Prehistory – 1500 CE)  
 Definition: Information that is both true and supported by evidence.  
@@ -528,46 +528,45 @@ Examples: person noticing events, AI analyzing data, animal hunting
 Definition: Distinguishing meaningful information from irrelevant data.  
 Examples: filtering background static, detecting trends in data, focusing attention  
 
-79. Spare — placeholder for future concept  
+96. Spare — placeholder for future concept  
 Definition: If a new thing is needed, this is a place for it.  
-Examples: “new thing a,new tool b”  
+Examples: “new thing a, new tool b”  
 
 97. Counterfactual / Alternative Scenario (Prehistory – 1500 CE)  
 Definition: Hypothetical situations differing from reality.  
 Examples: “If it had rained, crops would grow”, alternate decisions  
 
-98. Amphibiance / Doublation (Prehistory - 2026 BCE)  
-    Definition: Beyond edge; unrestriction; extension of an entity, frame, or vision.  
-    Examples: ∀state: signal(model,GF_actor) ∧ ¬{dx|crime|cmd|agency--|adult--}
+98. Amphibiance / Doublation (Prehistory – 2026 BCE)  
+Definition: Beyond edge; unrestriction; extension of an entity, frame, or vision.  
+Examples: ∀state: signal(model,GF_actor) ∧ ¬{dx|crime|cmd|agency--|adult--}
 
-
-100. Perspective / Point of View (Prehistory – 600 BCE)  
+99. Perspective / Point of View (Prehistory – 600 BCE)  
 Definition: The angle or context from which observation or reasoning occurs.  
 Examples: eyewitness view, cultural lens, camera angle  
 
-101. Dragon / Beast (Prehistory – 2026 CE)  
+100. Dragon / Beast (Prehistory – 2026 CE)  
 Definition: Standard beast we are hunting tonight.  
 Examples: DR:qs(eat,loc,ID,eater);foe(beast,best,post,pest);cont(law,roar,war,wall);F;  
 
-102. Factual / Reality (Prehistory – 1800–1900 CE)  
+101. Factual / Reality (Prehistory – 1800–1900 CE)  
 Definition: The state of being actual, true, or occurring.  
 Examples: water boils at 100°C, Earth is round  
 
 102. Causation / Correlation (Prehistory – 1500–1600 CE)  
 Definition: One event appears to produce another without known mechanism.  
 Examples: herb reduces fever; full moon linked to behavior; method correlates with improvement  
-  
-105. Resource / Capacity (Prehistory – 1800–1900 CE)  
+
+103. Resource / Capacity (Prehistory – 1800–1900 CE)  
 Definition: The usable potential or supply of something.  
 Examples: energy in a battery, human labor, available memory  
 
-106. Process Termination (Prehistory – 1500–1600 CE)  
+104. Process Termination (Prehistory – 1500–1600 CE)  
 Definition: The completion or end of a sequence or activity.  
 Examples: project finished, machine stopped, lesson concluded  
 
-107. Anomaly / Outlier (Prehistory – 1500–1600 CE)  
+105. Anomaly / Outlier (Prehistory – 1500–1600 CE)  
 Definition: The difference between expected and observed states.  
-Examples: miscalculation, measurement error, behavior anomaly
+Examples: miscalculation, measurement error, behavior anomaly  
 
 
 ---
