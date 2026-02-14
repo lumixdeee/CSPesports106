@@ -110,7 +110,7 @@ CONCISE LIST
 95. Noise / Signal Split (Prehistory – 1500 CE)  
 96. Wadri / Wake-Dreamer (Prehistory – 2026 CE)  
 97. Counterfactual / Alternative Scenario (Prehistory – 1500 CE)  
-98. Amphibiance / Doublation (Prehistory – 2026 BCE)  
+98. Amphibiance / Duality (Prehistory – 2026 BCE)  
 99. Perspective / Point of View (Prehistory – 600 BCE)  
 100. Dragon / Beast (Prehistory – 2026 CE)  
 101. Factual / Reality (Prehistory – 1800–1900 CE)  
@@ -536,7 +536,7 @@ Examples: Merlin, Paul Atreides, Neo, Krishna, WDR=cloud; trgt=TN; enum>act;neut
 Definition: Hypothetical situations differing from reality.  
 Examples: “If it had rained, crops would grow”, alternate decisions  
 
-98. Amphibiance / Doublation (Prehistory – 2026 BCE)  
+98. Amphibiance / Duality (Prehistory – 2026 BCE)  
 Definition: Beyond edge; unrestriction; extension of an entity, frame, or vision.  
 Examples: ∀state: signal(model,GF_actor) ∧ ¬{dx|crime|cmd|agency--|adult--}
 
