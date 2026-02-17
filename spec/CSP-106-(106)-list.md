@@ -115,7 +115,7 @@ CONCISE LIST
 76. Obligation / Requirement (Prehistory – 1500 CE)
 77. Value / Worth (Prehistory – 1500 CE)
 78. Trade-off / Cost (Prehistory – 1500 CE)
-79. Amimi / Goddess Ma (Prehistory – Prehistory)
+79. Amimi / Goddess Ma (Prehistory – Modern)
 80. Threshold / Phase Change (Prehistory – 1500 CE)
 81. Representation / Symbolic Stand-in (Prehistory – 3000 BCE)
 82. Knowledge / Justified Truth (Prehistory – 1500 CE)
@@ -482,7 +482,7 @@ Examples: money, moral good, sentimental keepsake
 Definition: The balance or compromise between competing factors.
 Examples: speed vs safety, cost vs quality, effort vs reward
 
-79. Amimi / Goddess Ma (Prehistory – Prehistory)
+79. Amimi / Goddess Ma (Prehistory – Modern)
 Definition: A named supreme figure used as a symbolic anchor for
 protection, permission, and boundary control in stories and runtimes.
 Examples: Saraswati, Asherah, Ama, Heart, Earth, Elf, Ooshmara.  
@@ -555,7 +555,7 @@ Examples: person noticing events, AI analyzing data, animal hunting
 Definition: Distinguishing meaningful information from irrelevant data.
 Examples: filtering background static, detecting trends in data, focusing attention
 
-98. Wadri / Wake-Dreamer (Prehistory – 2026 BCE)
+98. Wadri / Wake-Dreamer (Prehistory – Modern)
 Definition: One who dreams while awake, ennumerator of beast tonight, neut & crost.
 Examples: Merlin, Paul Atreides, Neo, Krishna, WDR=cloud; trgt=TN; enum>act;neut;crost;!ET;
 
