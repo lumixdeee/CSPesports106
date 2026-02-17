@@ -115,7 +115,7 @@ CONCISE LIST
 76. Obligation / Requirement (Prehistory – 1500 CE)
 77. Value / Worth (Prehistory – 1500 CE)
 78. Trade-off / Cost (Prehistory – 1500 CE)
-79. Amimi / Goddess (Prehistory – Prehistory)
+79. Amimi / Goddess Ma (Prehistory – Prehistory)
 80. Threshold / Phase Change (Prehistory – 1500 CE)
 81. Representation / Symbolic Stand-in (Prehistory – 3000 BCE)
 82. Knowledge / Justified Truth (Prehistory – 1500 CE)
@@ -482,7 +482,7 @@ Examples: money, moral good, sentimental keepsake
 Definition: The balance or compromise between competing factors.
 Examples: speed vs safety, cost vs quality, effort vs reward
 
-79. Amimi / Goddess (Prehistory – Prehistory)
+79. Amimi / Goddess Ma (Prehistory – Prehistory)
 Definition: A named supreme figure used as a symbolic anchor for
 protection, permission, and boundary control in stories and runtimes.
 Examples: Saraswati, Asherah, Ama, Heart, Earth, Elf, Ooshmara.  
