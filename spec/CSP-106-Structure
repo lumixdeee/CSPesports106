@@ -1,9 +1,9 @@
-# CSP-105 Asset Structure with Mogri
+# CSP-106 Asset Structure with Mogri
 
 ## 1. Overview
 
-**CSP-105** is a curated framework of semantic primitives, lists, and conceptual assets designed for cognitive modeling, prompt structuring, and AI-human interaction experiments.  
-- **Developer:** Julian Pursell  
+**CSP-106** is a curated framework of semantic primitives, lists, and conceptual assets designed for cognitive modeling, prompt structuring, and AI-human interaction experiments.  
+- **Developer:** Julian Pursell  /  lumixdeee
 - **Purpose:** Personal exploration, shareable for collaborative use  
 - **Key Feature:** Incremental, versioned lists for play, testing, and formalization  
 
@@ -41,8 +41,8 @@ Mogri is a **hypothetical container for “thing”**, containable or not, roote
 - **Without Mogri:** Responses fragment, lose focus  
 - **With Mogri:** AI interprets abstract inputs as contained, consistent concepts  
 
-### Example 3: Semantic Anchoring in CSP-105 Lists
-- **Task:** Organize CSP-105 semantic primitives into functional clusters  
+### Example 3: Semantic Anchoring in CSP-106 Lists
+- **Task:** Organize CSP-106 semantic primitives into functional clusters  
 - **With Mogri:** Acts as a **container/placeholder**, simplifying referencing and cross-linking  
 
 ---
@@ -56,7 +56,7 @@ Mogri is a **hypothetical container for “thing”**, containable or not, roote
 
 **Behavioral Notes:**  
 - Promotes **predictable AI behavior**  
-- Works as **conceptual scaffolding** for other CSP-105 assets  
+- Works as **conceptual scaffolding** for other CSP-106 assets  
 - Can be **nested or referenced** in complex prompt structures  
 
 ---
