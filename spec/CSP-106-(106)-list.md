@@ -483,9 +483,9 @@ Definition: The balance or compromise between competing factors.
 Examples: speed vs safety, cost vs quality, effort vs reward
 
 79. Amimi / Goddess (Prehistory – Prehistory)
-Definition: A named supreme figure used as a symbolic anchor for protection,
-permission, and boundary control in stories and runtimes.
-Examples: Saraswati, Asherah.
+Definition: A named supreme figure used as a symbolic anchor for
+protection, permission, and boundary control in stories and runtimes.
+Examples: Saraswati, Asherah, Ama, Heart, Earth, Elf, Ooshmara.  
 
 81. Threshold / Phase Change (Prehistory – 1500 CE)
 Definition: The point at which a qualitative change occurs.
