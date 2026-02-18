@@ -1,6 +1,6 @@
-# CSP-105 link tree
+# CSP-106 link tree
 
-Auto-generated web links for folders/files in `lumixdeee/CSP-105`.
+Auto-generated web links for folders/files in `lumixdeee/CSP-106`.
 
 Base ref: `main` (change this to a tag/commit if you want a frozen snapshot).
 
