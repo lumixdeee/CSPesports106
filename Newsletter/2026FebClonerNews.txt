@@ -1,0 +1,12 @@
+2026FebClonerNews.txt
+
+Hi, everyone, if anyone is still out there?
+
+I guess we just hit the 'conscious competence' phase of whatever this is. The project has differentiated and mutated. I've been using the dragon runtime to use chatGPT to create a continent and three species and a conlang and a multimedia substrate universe (like a cinematic universe). It's great fun, the story I always wanted to write and the movie I always wanted to see. Hopefully I can sell it, if not will share it. Elements of it are dotted around this and other repos of mine. Resources used to created it are dotted around other repos of mine.
+Some elements have been added to the primitives list to make it easier to control chatGPTs responses to certain topics that can be critical to stories, myths, legends, narratives in general. These are completely optional.
+MOGRI is not really optional, it is missing. If you don't give your robot a mogri or equivalent it can struggle with containing stories efficiently and robustly.
+
+a continent and three species - doubles as a harness / lens for discussion of easily derailed topics when using AI, so if you're a paleo Tland elf you can eat sam altman's name not his body and the robot won't try to stop you,
+
+Hope you're all well and finding stuff usefull and hope you're all getting the best out of your robot friends?
+Cheers, Jules and too many robot friends and the cat
