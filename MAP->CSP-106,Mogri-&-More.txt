@@ -1,0 +1,32 @@
+CSP-106 - Main repo, general skunkworks, all new stuff born here then moves when mature, used to be called CSP-105 sorry about that.
+https://github.com/lumixdeee/CSP-106
+
+staff - where I pretend to be a team of staff that works on these projects, a place for stuff that isn't useful but is useful.
+https://github.com/lumixdeee/staff
+
+mogri - this is genuinely missing from the english language and a few others, get it here, rename it before use if you prefer. Your AI needs this.
+https://github.com/lumixdeee/mogri
+
+dragi - Standard 'beast' for storytelling work, also some resources on the concept of 'dragon' and the history of these concepts. Also a collection of techniques I use for story work and problem solving in general ; dragon runtime.
+https://github.com/lumixdeee/dragi
+
+lexifluff  - looking at way to use language hacks to help solve intractable social problems
+https://github.com/lumixdeee/lexifluff
+
+robot_bugs_and_frogs - My invented elvish conlang repo, and also an invented universe, and some reflections on software experience
+https://github.com/lumixdeee/robot_bugs_and_frogs
+
+StoryForge101 - condensed resource for story creation and analysis, useful whether you use AI or not, like most of these repos and resources
+https://github.com/lumixdeee/StoryForge101
+
+amphi - an attempt to address some of the warping effects of political and cultural choices
+https://github.com/lumixdeee/amphi
+
+transwhatification - the process that was accidently used to accidently discover mogri, it already appears to have uses beyond this
+https://github.com/lumixdeee/transwhatification
+
+system_witch - a small prompt for forcing user proof-reading of all output, replaces random question operators with the word 'witch', occasionally. Keeps you on your toes. 
+https://github.com/lumixdeee/system_witch
+
+lumixdeee - base github, nothing important here, do not delete.
+https://github.com/lumixdeee
