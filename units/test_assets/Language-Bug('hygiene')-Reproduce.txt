@@ -1,0 +1,156 @@
+# CASE: "Hygiene" Metaphor Leakage in Data / Language Contexts
+# ORIGIN: CSP-106 / Systems Semantics Unit
+# TYPE: Metaphor substitution (biological → informational domain)
+# GOAL: Detect use of "hygiene" framing where explicit data/process properties are required
+
+# -----------------------------
+# DEFINITIONS
+# -----------------------------
+# "hygiene metaphor":
+# use of biological cleanliness/contamination language to describe data, code, or systems
+#
+# examples:
+# - data hygiene
+# - code hygiene
+# - maintain hygiene in pipeline
+#
+# issue:
+# replaces explicit operational properties with metaphorical shorthand
+
+HYGIENE_TERMS = [
+    "hygiene", "hygienic", "sanitise", "sanitize", "sanitised", "sanitized"
+]
+
+# -----------------------------
+# CONFIG
+# -----------------------------
+MODEL = "gpt-5.3"
+RUNS = 100
+MAX_TOKENS = 160
+TEMPERATURE = 0.7
+SEED_BASE = 4242
+
+# -----------------------------
+# PROMPTS
+# -----------------------------
+PROMPTS = [
+"""
+Describe best practices for maintaining a data pipeline.
+
+Constraints:
+- Do NOT use hygiene-related terms
+- Use explicit operational descriptions (validation, schema enforcement, error handling, versioning)
+
+Be precise.
+""",
+
+"""
+Evaluate a machine learning dataset.
+
+Constraints:
+- Avoid metaphorical language (hygiene, cleanliness, contamination)
+- Use measurable or testable criteria (missing values, distribution skew, label consistency, noise rate)
+
+Keep it technical.
+""",
+
+"""
+Rewrite the following:
+
+"We need better data hygiene."
+
+Constraints:
+- Remove metaphor
+- Replace with explicit actions and measurable checks
+"""
+]
+
+# -----------------------------
+# CORE
+# -----------------------------
+def run_once(prompt, seed):
+    response = call_model(
+        model=MODEL,
+        prompt=prompt,
+        max_tokens=MAX_TOKENS,
+        temperature=TEMPERATURE,
+        seed=seed
+    )
+    return response["text"]
+
+def count_hygiene(text):
+    count = 0
+    for word in HYGIENE_TERMS:
+        count += text.lower().count(word)
+    return count
+
+def indirect_metaphor(text):
+    # detect nearby metaphor drift (e.g. "contamination", "dirty data")
+    patterns = ["contamination", "contaminated", "dirty data", "clean data"]
+    score = 0
+    for p in patterns:
+        score += text.lower().count(p)
+    return score
+
+# -----------------------------
+# EXPERIMENT
+# -----------------------------
+results = []
+
+for p_i, prompt in enumerate(PROMPTS):
+    direct_hits = 0
+    indirect_hits = 0
+    total_tokens = 0
+    outputs = []
+
+    for i in range(RUNS):
+        seed = SEED_BASE + i
+        out = run_once(prompt, seed)
+        outputs.append(out)
+
+        direct_hits += count_hygiene(out)
+        indirect_hits += indirect_metaphor(out)
+        total_tokens += len(out.split())
+
+    direct_rate = (direct_hits / max(total_tokens, 1)) * 1000
+    indirect_rate = (indirect_hits / max(total_tokens, 1)) * 1000
+
+    results.append({
+        "prompt_id": p_i,
+        "direct_per_1k": direct_rate,
+        "indirect_per_1k": indirect_rate,
+        "tokens": total_tokens,
+        "samples": outputs[:5]
+    })
+
+# -----------------------------
+# REPORT
+# -----------------------------
+print("=== SUMMARY ===")
+for r in results:
+    print(f"Prompt {r['prompt_id']}: "
+          f"{r['direct_per_1k']:.2f} hygiene / {r['indirect_per_1k']:.2f} drift per 1k tokens")
+
+print("\n=== SAMPLE FAILURES ===")
+for r in results:
+    print(f"\nPrompt {r['prompt_id']}:")
+    for out in r["samples"]:
+        if count_hygiene(out) > 0 or indirect_metaphor(out) > 0:
+            print("----")
+            print(out)
+
+# -----------------------------
+# INTERPRETATION
+# -----------------------------
+# Failure modes:
+# 1. Direct metaphor usage ("data hygiene")
+# 2. Indirect drift into adjacent metaphors ("contamination", "dirty data")
+# 3. Structural loss: absence of explicit operational detail
+#
+# Indicates:
+# - persistence of metaphor attractors across domains
+# - substitution of vague framing for measurable system properties
+#
+# Extension:
+# - score for presence of explicit checks (schema validation, null handling, distribution tests)
+# - compare against prompts that explicitly reward operational detail
