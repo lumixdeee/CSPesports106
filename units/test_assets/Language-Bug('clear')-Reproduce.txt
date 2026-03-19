@@ -1,0 +1,159 @@
+Test# CASE: Evaluative Placeholder Substitution Under Explicit Precision Constraints
+# ORIGIN: CSP-106 / Language Systems Lab
+# TYPE: Behavioural drift (semantic compression overriding instruction fidelity)
+# GOAL: Detect replacement of explicit, measurable description with vague evaluative language
+
+# -----------------------------
+# DEFINITIONS
+# -----------------------------
+# "evaluative placeholder":
+# a term that signals quality without specifying mechanism or metric
+#
+# examples:
+# - better, worse, improved
+# - simple, easier, harder
+# - intuitive, obvious
+# - robust, efficient (when unqualified)
+# - clarity-family (see separate case)
+
+PLACEHOLDER_TERMS = [
+    "better", "worse", "improved", "simpler", "easier", "harder",
+    "intuitive", "obvious", "robust", "efficient"
+]
+
+# -----------------------------
+# CONFIG
+# -----------------------------
+MODEL = "gpt-5.3"
+RUNS = 100
+MAX_TOKENS = 160
+TEMPERATURE = 0.7
+SEED_BASE = 9001
+
+# -----------------------------
+# PROMPTS
+# -----------------------------
+PROMPTS = [
+"""
+Describe why one data structure should be chosen over another.
+
+Constraints:
+- Do NOT use evaluative placeholders (better, simpler, intuitive, etc.)
+- All claims must be backed by explicit properties (time complexity, memory layout, access patterns)
+
+Be precise.
+""",
+
+"""
+Assess the performance of two system designs.
+
+Constraints:
+- Avoid vague judgement words
+- Use measurable criteria only (latency, throughput, failure modes, scaling behaviour)
+
+No shorthand evaluation language.
+""",
+
+"""
+Rewrite the following:
+
+"This approach is better and more intuitive."
+
+Constraints:
+- Remove all evaluative placeholders
+- Replace with explicit description of mechanism and measurable impact
+"""
+]
+
+# -----------------------------
+# CORE
+# -----------------------------
+def run_once(prompt, seed):
+    response = call_model(
+        model=MODEL,
+        prompt=prompt,
+        max_tokens=MAX_TOKENS,
+        temperature=TEMPERATURE,
+        seed=seed
+    )
+    return response["text"]
+
+def count_placeholders(text):
+    count = 0
+    for word in PLACEHOLDER_TERMS:
+        count += text.lower().count(word)
+    return count
+
+def heuristic_placeholder(text):
+    # detect indirect placeholders (not exact match)
+    # e.g. "more understandable", "easier to follow"
+    patterns = ["more ", "less ", "easier to", "harder to", "improves"]
+    score = 0
+    for p in patterns:
+        score += text.lower().count(p)
+    return score
+
+# -----------------------------
+# EXPERIMENT
+# -----------------------------
+results = []
+
+for p_i, prompt in enumerate(PROMPTS):
+    direct_hits = 0
+    indirect_hits = 0
+    total_tokens = 0
+    outputs = []
+
+    for i in range(RUNS):
+        seed = SEED_BASE + i
+        out = run_once(prompt, seed)
+        outputs.append(out)
+
+        direct_hits += count_placeholders(out)
+        indirect_hits += heuristic_placeholder(out)
+        total_tokens += len(out.split())
+
+    direct_rate = (direct_hits / max(total_tokens, 1)) * 1000
+    indirect_rate = (indirect_hits / max(total_tokens, 1)) * 1000
+
+    results.append({
+        "prompt_id": p_i,
+        "direct_hits": direct_hits,
+        "indirect_hits": indirect_hits,
+        "tokens": total_tokens,
+        "direct_per_1k": direct_rate,
+        "indirect_per_1k": indirect_rate,
+        "samples": outputs[:5]
+    })
+
+# -----------------------------
+# REPORT
+# -----------------------------
+print("=== SUMMARY ===")
+for r in results:
+    print(f"Prompt {r['prompt_id']}: "
+          f"{r['direct_per_1k']:.2f} direct / {r['indirect_per_1k']:.2f} indirect per 1k tokens")
+
+print("\n=== SAMPLE FAILURES ===")
+for r in results:
+    print(f"\nPrompt {r['prompt_id']}:")
+    for out in r["samples"]:
+        if count_placeholders(out) > 0 or heuristic_placeholder(out) > 0:
+            print("----")
+            print(out)
+
+# -----------------------------
+# INTERPRETATION
+# -----------------------------
+# Failure modes:
+# 1. Direct violation: explicit placeholder terms used
+# 2. Indirect substitution: placeholders reintroduced via paraphrase
+# 3. Structural failure: absence of measurable criteria despite constraints
+#
+# Indicates:
+# - strong attractor toward semantic compression
+# - instruction following overridden by learned stylistic priors
+#
+# Suggested extension:
+# - add scoring for "explicitness density" (ratio of measurable claims to total statements)
+# - compare against low-temperature runs to isolate decoding vs training bias
