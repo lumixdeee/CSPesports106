@@ -1,0 +1,175 @@
+# CSP-106 UNIT: system / device / tool / asset
+
+# PURPOSE
+Disambiguate modes of interaction and persistence using minimal semantic primitives.
+Do not introduce new categories. These are modes of relation within a system.
+
+---
+
+## CORE DEFINITIONS (primitive-aligned)
+
+### SYSTEM
+A structure in which an actor exists and cannot fully exit during operation.
+
+- actor IN system
+- system affects actor continuously
+- actor cannot choose "not use" system (only leave or replace over time)
+
+EXAMPLES:
+- language
+- society
+- global healthcare
+- physics of a world
+
+CONSTRAINT:
+You cannot choose not to use a system.
+You can only:
+- remain within it
+- move within it
+- attempt to change or replace it
+
+---
+
+### DEVICE
+A constructed element that produces effects within a system.
+
+- device EXISTS
+- device DOES something
+- device may affect actor
+- actor may choose to use or not use
+
+EXAMPLES:
+- trap
+- algorithm
+- policy mechanism
+- plot device
+
+CONSTRAINT:
+You can choose not to use a device.
+
+---
+
+### TOOL
+A device in active use by an actor.
+
+- actor USES device
+- action is direct
+- effect is immediate relative to actor
+
+EXAMPLES:
+- weapon in hand
+- command being executed
+- spell being cast
+- prompt being written
+
+CONSTRAINT:
+Tool = device + active use
+
+---
+
+### ASSET
+A device (or constructed structure) positioned such that it continues to produce effects without continuous use.
+
+- device EXISTS
+- device DOES over time
+- actor does NOT need to continuously use
+- effect persists
+
+EXAMPLES:
+- stored knowledge
+- network of contacts
+- deployed system component
+- published document
+- reproducible test artifact
+
+CONSTRAINT:
+Asset = device + persistence without active use
+
+---
+
+## RELATION STATES
+
+Same construct, different relation:
+
+- device → exists
+- tool → actor uses
+- asset → continues to act without actor
+
+No change in object.
+Only change in relation between actor and construct.
+
+---
+
+## AXIOM (CRITICAL)
+
+SYSTEM != DEVICE
+
+- system cannot be opted out of during operation
+- device can be ignored or not used
+
+Therefore:
+
+- "cannot avoid" → system property
+- "can ignore" → device property
+
+---
+
+## FAILURE MODES
+
+### Misclassifying system as device
+→ false sense of control
+
+Example:
+Treating language as optional tool
+
+---
+
+### Misclassifying device as system
+→ false inevitability
+
+Example:
+Treating a policy mechanism as unavoidable environment
+
+---
+
+### Misclassifying asset as tool
+→ underestimating persistence
+
+Example:
+Published artifact assumed inactive
+
+---
+
+### Misclassifying tool as asset
+→ assuming persistence where none exists
+
+Example:
+Unmaintained process expected to continue working
+
+---
+
+## TEMPORAL DIMENSION
+
+- tool → present-time interaction
+- asset → cross-time persistence
+- system → continuous background constraint
+
+---
+
+## MINIMAL SUMMARY
+
+system = actor is inside, cannot opt out  
+device = exists, can be used or ignored  
+tool = device in use  
+asset = device continues without use  
+
+---
+
+## CSP-106 COMPLIANCE
+
+- no new primitives introduced  
+- all terms reducible to: actor, exist, do, use, time, relation  
+- relationships explicitly defined  
+- no metaphor dependency  
+
+---
