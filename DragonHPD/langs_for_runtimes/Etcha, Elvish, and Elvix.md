@@ -32,17 +32,17 @@ into a single coherent runtime.
 
 The system is composed of three layers that share a common root but serve different functions:
 
-            ┌───────────────┐
-            │    Elvish     │   expressive, human, situational
-            └──────┬────────┘
-                   │
-            ┌──────▼────────┐
-            │     Etcha     │   generative substrate
-            └──────┬────────┘
-                   │
-            ┌──────▼────────┐
-            │     Elvix     │   structured, deterministic
-            └───────────────┘
+           
+                        ┌──────▼────────┐
+                        │     Etcha     │   generative substrate
+                        └─┬────────┬────┘
+                          │        │
+            ┌─────────────▼─┐    ┌─▼─────────────┐
+            │     Elvix     │    │    Elvish     │   
+            └───────────────┘    └───────────────┘
+     structured, deterministic    expressive, human, situational
+           
+
 
 ### Etcha
 
