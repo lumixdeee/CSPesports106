@@ -12,29 +12,6 @@ Highlight any missing primitives rather than inventing them.
 
 ==================================================================================
 
-TS02 TwoSnake addendum (carry-safe)
-
-- Snake body is an unbroken strip of 2-char OP units.
-- Decode is exact: chunk2; lookup(OP); emit(ID,TLA); no fallback.
-- OP <-> ID <-> TLA is 1-to-1.
-- Existing OPs are frozen once published.
-
-Carry stub (portable):
-
-TS=TS02CSP106+
-SNAKE=AMMGAAEPVVGSTTRASRNNVDMPCSFMEMESAISGWBEEXCECLQVQVBSCTPSDVSGNXDFPIOACFCWCWTBEXFLPXMBRVPAEGLVYCGIUIMBMBDXXVMXATRAFQEVNCTWSVFGRBAGILHZSCRCAWAWDAGHNLRFDXWOBVLVTMAWPCPIKMCXRVEFBSNSAGCLEZZSSMOIANSMMQSADIPDDRFAUBCLTBO
-DECODE=chunk2;lookup(OP);emit(ID,TLA);no_fallback
-
-OP table format (authoritative for TS02 decode):
-
-OP, ID, TLA, NAME1, NAME2
-
-New row (this doc’s change):
-
-YY, 92, EYE, Surrender, Yield
-
-==================================================================================
-
 CONCISE LIST
 
 1. Existence / Being (Prehistory – always)
