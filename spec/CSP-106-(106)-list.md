@@ -430,7 +430,7 @@ Examples: family tree, corporate structure, taxonomic classification
 
 66. Story / Narrativization
 Definition: The organization of events into agent-centered, tension-bearing sequences.
-Examples: hero vs villain arc; “the project failed because…”; mythic quest; courtroom case framing.
+Examples: hero vs villain arc; “the project failed because…”; mythic quest; courtroom case framing. Prompt: STORY:REQ ACT,OBJ,(foe|cont);AMB→Mogri;ARC t0→t1;OUT {ACT,OBJ,OPP,Δ,STATE}
 
 67. Reference / Aboutness (Prehistory – 600 BCE)
 Definition: The property of pointing to or denoting something.
