@@ -4,9 +4,9 @@ Hey it's spring!
 
 Very locked into the story and Elvish creation over at https://github.com/lumixdeee/robot_bugs_and_frogs
 
-Trying to figure out how to get Mogri into the upstream tooling where it belongs
+Trying to figure out how to get Mogri (https://github.com/lumixdeee/mogri) into the upstream tooling where it belongs
 
-Poking other repos occasionally
+Poking other repos occasionally https://github.com/lumixdeee
 
 Otherwise, gardening and DIY taking over now that the weather is better
 
