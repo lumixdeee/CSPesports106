@@ -2,12 +2,12 @@
 
 This file uses the CSP-106 framework, a set of 106 core linguistic/conceptual primitives.
 
-STATUS TAGS:
-[CORE] = irreducible primitive
-[VIEW] = alternate framing of a CORE
-[OP]   = operator acting on primitives
-[COMP] = composite (built from primitives)
-[RUN]  = runtime / system-level construct
+STATUS TAGS: 
+[CORE] = irreducible primitive  
+[VIEW] = alternate framing of a CORE  
+[OP]   = operator acting on primitives  
+[COMP] = composite (built from primitives)  
+[RUN]  = runtime / system-level construct  
 
 ==================================================================================
 
