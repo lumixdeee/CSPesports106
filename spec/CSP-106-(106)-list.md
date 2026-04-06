@@ -148,7 +148,18 @@ SPECIAL LOCKS:
 - Identity [CORE implied] vs Name/Role/Class [VIEW]
 
 - Mogri [RUN] is non-reducible substrate.
+  
+- Identity [CORE] is implicit base primitive.
+- Name / Role / Class [VIEW] are projections of Identity.
 
+- Causality [CORE] = resolved mechanism (strong link)
+- Causation [CORE] = observed link (mechanism may be unknown)
+- Causation entries (44, 103) share this weak-link definition
+- Cause / Effect [VIEW] = directional framing of these relations
+
+- VIEW primitives map to the nearest semantically dominant CORE (e.g., Presence → Being, Metric → Measurement, Capacity → Resource).
+
+- RUN primitives may act as active runtime agents (e.g., Dragon, Wadri) or passive substrate (e.g., Mogri).
 ---
 
 *Notes:*
