@@ -1,125 +1,153 @@
-# CSP-106 Instruction Prompt
+# CSP-106 Instruction Prompt (ANNOTATED)
 
-This file uses the CSP-106 framework, a set of 106 core linguistic/conceptual primitives designed to:
+This file uses the CSP-106 framework, a set of 106 core linguistic/conceptual primitives.
 
-1. Constrain concept introduction and reduce hallucination.
-2. Ensure consistency and stability across reasoning steps.
-3. Force explicit acknowledgment of missing primitives instead of making assumptions.
-
-**Usage:**
-When interpreting or generating content from this file, map all concepts to CSP primitives. Avoid introducing new concepts or unstated assumptions.
-Highlight any missing primitives rather than inventing them.
+STATUS TAGS:
+[CORE] = irreducible primitive
+[VIEW] = alternate framing of a CORE
+[OP]   = operator acting on primitives
+[COMP] = composite (built from primitives)
+[RUN]  = runtime / system-level construct
 
 ==================================================================================
 
-CONCISE LIST
+CONCISE LIST (ANNOTATED)
 
-1. Existence / Being (Prehistory – always)
-2. Identity / Name (Prehistory – always)
-3. Action / Event (Prehistory – always)
-4. Property / Attribute (Prehistory – always)
-5. Quantity / Number (Prehistory – ~3000 BCE)
-6. Space / Location (Prehistory – always)
-7. Time / Temporal Relation (Prehistory – always)
-8. Causality / Mechanism (Prehistory – 600 BCE)
-9. Comparison / Relation (Prehistory – 600 BCE)
-10. Negation / Absence (Prehistory – always)
-11. Direction / Orientation (Prehistory – always)
-12. Possession / Ownership (Prehistory – 1000 BCE)
-13. Communication / Signal (Prehistory – ~5000 BCE)
-14. Modality / Capability (Prehistory – 1000 BCE)
-15. Emotion / Feeling (Prehistory – always)
-16. Identity / Role (Prehistory – always)
-17. Intention / Desire (Prehistory – ~5000 BCE)
-18. Aggregation / Grouping (Prehistory – 1000 BCE)
-19. Boundary / Limit (Prehistory – 600 BCE)
-20. Existence / Presence (Prehistory – 1000 BCE)
-21. Change / Transformation (Prehistory – always)
-22. Identity / Class (Prehistory – ~1000 BCE)
-23. Sequence / Order (Prehistory – 1000 BCE)
-24. Measurement / Magnitude (Prehistory – 3000 BCE)
-25. Comparison Value / Benchmark (Prehistory – 3000 BCE)
-26. Attribute Relationship / Correlation (Prehistory – 1000 BCE)
-27. Persistence / Continuity (Prehistory – ~1000 BCE)
-28. Separation / Distinction (Prehistory – 1000 BCE)
-29. Scale / Proportion (Prehistory – 1000 BCE)
-30. Connection / Network (Prehistory – 1000 BCE)
-31. Change Rate / Dynamics (Prehistory – ~1000 BCE)
-32. Potential / Latent State (Prehistory – always)
-33. Observation / Detection (Prehistory – 1000 BCE)
-34. Cause / Effect (Prehistory – 600 BCE)
-35. Possibility / Contingency (Prehistory – 1000 BCE)
-36. Constraint / Limitation (Prehistory – 1500 CE)
-37. Threshold / Critical Point (Prehistory – 1500 CE)
-38. Error / Fault (Prehistory – 1500 CE)
-39. Correction / Adjustment (Prehistory – 1500 CE)
-40. Process / Procedure (Prehistory – 1500 CE)
-41. Transformation / Change Mechanism (Prehistory – 1500 CE)
-42. Resource Management (Prehistory – 1800 BCE)
-43. Probability / Likelihood (Prehistory – 1500 CE)
-44. Causation / Mechanism (Prehistory – 1500–1600 CE)
-45. Pattern / Regularity (Prehistory – 1000 BCE)
-46. Symmetry / Balance (Prehistory – 1000 BCE)
-47. Signal / Meaning (Prehistory – 1500 CE)
-48. Interpretation / Understanding (Prehistory – 1500 CE)
-49. Observation / Measurement (Prehistory – 1000 BCE)
-50. Resource / Material (Prehistory – 3000 BCE)
-51. Limitation / Deficiency (Prehistory – 3000 BCE)
-52. Transformation Mechanism / Method (Prehistory – 1500 CE)
-53. Comparison Attribute / Metric (Prehistory – 3000 BCE)
-54. Adaptation / Adjustment (Prehistory – 1500 CE)
-55. Temporal Relation / Sequence (Prehistory – 3000 BCE)
-56. Flow / Movement (Prehistory – 3000 BCE)
-57. Evaluation / Judgment (Prehistory – 600 BCE)
-58. Quantification / Measurement (Prehistory – 3000 BCE)
-59. Categorization / Classification (Prehistory – 1000 BCE)
-60. Existential Quantification / Scope (Prehistory – 600 BCE)
-61. Probability Assessment / Forecast (Prehistory – 1500 CE)
-62. Pattern Recognition / Detection (Prehistory – 1500 CE)
-63. Error Detection / Anomaly Recognition (Prehistory – 1500 CE)
-64. Logical Relation / Inference (Prehistory – 1500 BCE)
-65. Hierarchy / Ordering (Prehistory – 1000 BCE)
-66. Story / Narrativization (Prehistory – 3000 BCE)
-67. Reference / Aboutness (Prehistory – 600 BCE)
-68. Association / Linkage (Prehistory – 1000 BCE)
-69. Constraint Satisfaction (Prehistory – 1500 CE)
-70. Context / Framing (Prehistory – 600 BCE)
-71. Agency / Actorhood (Prehistory – 600 BCE)
-72. Norm / Expectation (Prehistory – 600 BCE)
-73. Recursion / Self-Reference (Prehistory – 1500 CE)
-74. Default / Assumption (Prehistory – 1500 CE)
-75. Counterfactual / Alternative World (Prehistory – 1500 CE)
-76. Obligation / Requirement (Prehistory – 1500 CE)
-77. Value / Worth (Prehistory – 1500 CE)
-78. Trade-off / Cost (Prehistory – 1500 CE)
-79. Amimi / Goddess Ma (Prehistory – Modern)
-80. Threshold / Phase Change (Prehistory – 1500 CE)
-81. Representation / Symbolic Stand-in (Prehistory – 3000 BCE)
-82. Knowledge / Justified Truth (Prehistory – 1500 CE)
-83. Commitment / Binding Intent (Prehistory – 1500 CE)
-84. Correction / Error Repair (Prehistory – 1500 CE)
-85. Stability / Equilibrium (Prehistory – 1500 CE)
-86. Belief / Assumed Truth (Prehistory – 600 BCE)
-87. Disagreement / Conflict (Prehistory – 600 BCE)
-88. Alignment / Agreement (Prehistory – 600 BCE)
-89. Compression / Abstraction Gain (Prehistory – 1500 CE)
-90. Termination / Closure (Prehistory – 1500 CE)
-91. Zero / Null (Prehistory – 300–500 CE)
-92. Surrender / Yield (Prehistory – always)
-93. One / First Distinction (Prehistory – 3000 BCE)
-94. Mogri / Undifferentiated Potential (Prehistory – Present 2025)
-95. Observer / Agent (Prehistory – 1500 CE)
-96. Noise / Signal Split (Prehistory – 1500 CE)
-97. Wadri / Wake-Dreamer (Prehistory – 2026 BCE)
-98. Counterfactual / Alternative Scenario (Prehistory – 1500 CE)
-99. Amphibiance / Duality (Prehistory – 2026 BCE)
-100. Perspective / Point of View (Prehistory – 600 BCE)
-101. Dragon / Beast (Prehistory – 2026 CE)
-102. Factual / Reality (Prehistory – 1800–1900 CE)
-103. Causation / Correlation (Prehistory – 1500–1600 CE)
-104. Resource / Capacity (Prehistory – 1800–1900 CE)
-105. Process Termination (Prehistory – 1500–1600 CE)
-106. Anomaly / Outlier (Prehistory – 1500–1600 CE)
+1. Existence / Being [CORE]
+2. Identity / Name [VIEW]
+3. Action / Event [CORE]
+4. Property / Attribute [CORE]
+5. Quantity / Number [CORE]
+6. Space / Location [CORE]
+7. Time / Temporal Relation [CORE]
+8. Causality / Mechanism [CORE]
+9. Comparison / Relation [CORE]
+10. Negation / Absence [CORE]
+11. Direction / Orientation [CORE]
+12. Possession / Ownership [CORE]
+13. Communication / Signal [CORE]
+14. Modality / Capability [CORE]
+15. Emotion / Feeling [CORE]
+16. Identity / Role [VIEW]
+17. Intention / Desire [CORE]
+18. Aggregation / Grouping [CORE]
+19. Boundary / Limit [CORE]
+20. Existence / Presence [VIEW]
+21. Change / Transformation [CORE]
+22. Identity / Class [VIEW]
+23. Sequence / Order [CORE]
+24. Measurement / Magnitude [CORE]
+25. Comparison Value / Benchmark [VIEW]
+26. Attribute Relationship / Correlation [VIEW]
+27. Persistence / Continuity [CORE]
+28. Separation / Distinction [CORE]
+29. Scale / Proportion [CORE]
+30. Connection / Network [CORE]
+31. Change Rate / Dynamics [VIEW]
+32. Potential / Latent State [CORE]
+33. Observation / Detection [CORE]
+34. Cause / Effect [VIEW]
+35. Possibility / Contingency [CORE]
+36. Constraint / Limitation [CORE]
+37. Threshold / Critical Point [CORE]
+38. Error / Fault [CORE]
+39. Correction / Adjustment [OP]
+40. Process / Procedure [CORE]
+41. Transformation / Change Mechanism [VIEW]
+42. Resource Management [COMP]
+43. Probability / Likelihood [CORE]
+44. Causation / Mechanism [CORE]
+45. Pattern / Regularity [CORE]
+46. Symmetry / Balance [CORE]
+47. Signal / Meaning [VIEW]
+48. Interpretation / Understanding [OP]
+49. Observation / Measurement [VIEW]
+50. Resource / Material [CORE]
+51. Limitation / Deficiency [VIEW]
+52. Transformation Mechanism / Method [VIEW]
+53. Comparison Attribute / Metric [VIEW]
+54. Adaptation / Adjustment [OP]
+55. Temporal Relation / Sequence [VIEW]
+56. Flow / Movement [COMP]
+57. Evaluation / Judgment [OP]
+58. Quantification / Measurement [VIEW]
+59. Categorization / Classification [OP]
+60. Existential Quantification / Scope [OP]
+61. Probability Assessment / Forecast [OP]
+62. Pattern Recognition / Detection [OP]
+63. Error Detection / Anomaly Recognition [OP]
+64. Logical Relation / Inference [OP]
+65. Hierarchy / Ordering [CORE]
+66. Story / Narrativization [COMP]
+67. Reference / Aboutness [CORE]
+68. Association / Linkage [CORE]
+69. Constraint Satisfaction [COMP]
+70. Context / Framing [CORE]
+71. Agency / Actorhood [CORE]
+72. Norm / Expectation [CORE]
+73. Recursion / Self-Reference [CORE]
+74. Default / Assumption [OP]
+75. Counterfactual / Alternative World [CORE]
+76. Obligation / Requirement [CORE]
+77. Value / Worth [CORE]
+78. Trade-off / Cost [COMP]
+79. Amimi / Goddess Ma [RUN]
+80. Threshold / Phase Change [VIEW]
+81. Representation / Symbolic Stand-in [CORE]
+82. Knowledge / Justified Truth [COMP]
+83. Commitment / Binding Intent [CORE]
+84. Correction / Error Repair [OP]
+85. Stability / Equilibrium [CORE]
+86. Belief / Assumed Truth [CORE]
+87. Disagreement / Conflict [COMP]
+88. Alignment / Agreement [COMP]
+89. Compression / Abstraction Gain [OP]
+90. Termination / Closure [CORE]
+91. Zero / Null [CORE]
+92. Surrender / Yield [CORE]
+93. One / First Distinction [CORE]
+94. Mogri / Undifferentiated Potential [RUN]
+95. Observer / Agent [CORE]
+96. Noise / Signal Split [OP]
+97. Wadri / Wake-Dreamer [RUN]
+98. Counterfactual / Alternative Scenario [VIEW]
+99. Amphibiance / Duality [RUN]
+100. Perspective / Point of View [CORE]
+101. Dragon / Beast [RUN]
+102. Factual / Reality [CORE]
+103. Causation / Correlation [CORE]
+104. Resource / Capacity [VIEW]
+105. Process Termination [VIEW]
+106. Anomaly / Outlier [VIEW]
+
+==================================================================================
+
+NOTES (UPDATED FOR ANNOTATION LAYER)
+
+- CORE primitives form the minimal irreducible set (~40).
+- VIEW primitives are alternate framings of CORE and should collapse during reasoning.
+- OP primitives act on CORE but do not introduce new ontology.
+- COMP primitives are compositions and may be expanded into underlying primitives.
+- RUN primitives define runtime / narrative / system-layer constructs (Mogri, Dragon, Wadri).
+
+INTERPRETATION RULES FOR MACHINES:
+
+1. Prefer CORE during reasoning.
+2. Reduce VIEW → corresponding CORE before inference.
+3. Expand COMP → constituent primitives when precision required.
+4. Execute OP over CORE/VIEW inputs.
+5. Treat RUN as environment, not object-level entity.
+
+SPECIAL LOCKS:
+
+- Causation [CORE] = observed link (no mechanism required)
+- Causality [CORE] = resolved mechanism
+- Both must NOT be merged.
+
+- Being [CORE] vs Presence [VIEW]
+- Identity [CORE implied] vs Name/Role/Class [VIEW]
+
+- Mogri [RUN] is non-reducible substrate.
 
 ---
 
@@ -128,450 +156,465 @@ CONCISE LIST
 - The numbering preserves the original 1–106 scheme.
 - Dates are approximate “in-use” (cognitive emergence) and “recognised” (first formal naming or systemisation).
 - Mogri (Primitive 94) is treated as the foundational container for all other primitives.
-- Dragon / Beast (101) is for co-storying and co-hunting
+- Dragon / Beast (101) is for co-storying and co-hunting.
 - This format is ready for GitHub Markdown — headings, numbered lists, and parenthetical notes.
 
+- Primitives are annotated with status tags: CORE, VIEW, OP, COMP, RUN.
+- CORE primitives are the minimal irreducible set used for reasoning.
+- VIEW primitives are alternate framings and should reduce to CORE during processing.
+- OP primitives act on other primitives and do not introduce new ontology.
+- COMP primitives are compositions and may be expanded into underlying primitives.
+- RUN primitives define runtime or system-level constructs (e.g., Mogri, Dragon).
+
+==================================================================================
+
+END
 ---
 
-Expanded list with examples
+# 106 Linguistic Primitives (3-Line Format, ANNOTATED)
 
-# 106 Linguistic Primitives (3-Line Format)
-
-Preserves numbering, definitions, examples, and approximate in-use vs recognised dates.
+STATUS TAGS:
+[CORE] irreducible
+[VIEW] alternate framing
+[OP] operator
+[COMP] composite
+[RUN] runtime
 
 ---
 
 ## Primitives 1–35
 
-1. Existence / Being (Prehistory – always)
+1. Existence / Being [CORE] (Prehistory - always)
 Definition: The fact of something being, existing, or present.
 Examples: a rock exists, life exists, a thought occurs
 
-2. Identity / Name (Prehistory – always)
+2. Identity / Name [VIEW] (Prehistory - always)
 Definition: The distinguishing label or recognition of a thing as itself.
-Examples: “Socrates” refers to a person, “Tree” identifies a plant
+Examples: "Socrates", "Tree"
 
-3. Action / Event (Prehistory – always)
-Definition: Something that occurs or is performed over time.
-Examples: running, falling, shouting
+3. Action / Event [CORE] (Prehistory - always)
+Definition: Something that occurs over time.
+Examples: running, falling
 
-4. Property / Attribute (Prehistory – always)
-Definition: A characteristic, quality, or feature of something.
-Examples: red color, hardness, sweetness
+4. Property / Attribute [CORE] (Prehistory - always)
+Definition: A characteristic of something.
+Examples: red, hard, sweet
 
-5. Quantity / Number (Prehistory – ~3000 BCE)
-Definition: The amount, count, or measure of items or concepts.
-Examples: three apples, five minutes, two thoughts
+5. Quantity / Number [CORE] (Prehistory - ~3000 BCE)
+Definition: Amount or count.
+Examples: three apples, five minutes
 
-6. Space / Location (Prehistory – always)
-Definition: The position or area occupied by something.
-Examples: on the table, under the bridge, at home
+6. Space / Location [CORE] (Prehistory - always)
+Definition: Position in space.
+Examples: on table, under bridge
 
-7. Time / Temporal Relation (Prehistory – always)
-Definition: The ordering or duration of events.
-Examples: before sunrise, after lunch, two hours ago
+7. Time / Temporal Relation [CORE] (Prehistory - always)
+Definition: Ordering or duration.
+Examples: before, after
 
-8. Causality / Mechanism (Prehistory – 600 BCE)
-Definition: One event produces another with an identified mechanism.
-Examples: gravity causes falling, enzymes catalyze reactions, training improves skill
+8. Causality / Mechanism [CORE] (Prehistory - 600 BCE)
+Definition: Effect with known mechanism.
+Examples: gravity causes falling
 
-9. Comparison / Relation (Prehistory – 600 BCE)
-Definition: The assessment of similarity, difference, or connection between things.
-Examples: taller than, faster than, part of
+9. Comparison / Relation [CORE] (Prehistory - 600 BCE)
+Definition: Relation between entities.
+Examples: taller than
 
-10. Negation / Absence (Prehistory – always)
-Definition: The state of something not being or lacking.
-Examples: no water, nothing happened, absence of light
+10. Negation / Absence [CORE] (Prehistory - always)
+Definition: Not-being.
+Examples: no water
 
-11. Direction / Orientation (Prehistory – always)
-Definition: The alignment or path relative to reference points.
-Examples: north, left, toward the door
+11. Direction / Orientation [CORE] (Prehistory - always)
+Definition: Relative alignment.
+Examples: left, north
 
-12. Possession / Ownership (Prehistory – 1000 BCE)
-Definition: The relation of having or controlling something.
-Examples: my book, her car, their house
+12. Possession / Ownership [CORE] (Prehistory - 1000 BCE)
+Definition: Having relation.
+Examples: my book
 
-13. Communication / Signal (Prehistory – ~5000 BCE)
-Definition: The transmission of information or intention between entities.
-Examples: gestures, words, smoke signals
+13. Communication / Signal [CORE] (Prehistory - ~5000 BCE)
+Definition: Information transfer.
+Examples: speech, gesture
 
-14. Modality / Capability (Prehistory – 1000 BCE)
-Definition: The potential or ability of an entity to act or be acted upon.
-Examples: can swim, might rain, able to lift
+14. Modality / Capability [CORE] (Prehistory - 1000 BCE)
+Definition: Ability or possibility of action.
+Examples: can, might
 
-15. Emotion / Feeling (Prehistory – always)
-Definition: Internal affective states experienced by a being.
-Examples: happiness, fear, surprise
+15. Emotion / Feeling [CORE] (Prehistory - always)
+Definition: Internal affect state.
+Examples: fear, joy
 
-16. Identity / Role (Prehistory – always)
-Definition: The function, position, or expected behavior of an entity.
-Examples: teacher, parent, predator
+16. Identity / Role [VIEW] (Prehistory - always)
+Definition: Function or position.
+Examples: teacher
 
-17. Intention / Desire (Prehistory – ~5000 BCE)
-Definition: A motivating state that drives action or thought.
-Examples: wants food, aims to escape, intends to help
+17. Intention / Desire [CORE] (Prehistory - ~5000 BCE)
+Definition: Motivating state.
+Examples: wants food
 
-18. Aggregation / Grouping (Prehistory – 1000 BCE)
-Definition: The collection or assembly of items as a unit.
-Examples: herd of cattle, pile of stones, team
+18. Aggregation / Grouping [CORE] (Prehistory - 1000 BCE)
+Definition: Collection into unit.
+Examples: herd, pile
 
-19. Boundary / Limit (Prehistory – 600 BCE)
-Definition: The edge, extent, or restriction of an entity or area.
-Examples: fence line, maximum speed, personal space
+19. Boundary / Limit [CORE] (Prehistory - 600 BCE)
+Definition: Edge or constraint.
+Examples: fence, max speed
 
-20. Existence / Presence (Prehistory – 1000 BCE)
-Definition: The state of being observable or manifest.
-Examples: someone is here, a sound is heard, a light shines
+20. Existence / Presence [VIEW] (Prehistory - 1000 BCE)
+Definition: Manifest being.
+Examples: someone is here
 
-21. Change / Transformation (Prehistory – always)
-Definition: The process of becoming different in form, state, or nature.
-Examples: ice melts, leaves turn color, ideas evolve
+21. Change / Transformation [CORE] (Prehistory - always)
+Definition: State transition.
+Examples: ice melts
 
-22. Identity / Class (Prehistory – ~1000 BCE)
-Definition: Membership of an entity in a category or type.
-Examples: dog is an animal, oak is a tree, prime number
+22. Identity / Class [VIEW] (Prehistory - ~1000 BCE)
+Definition: Category membership.
+Examples: dog is animal
 
-23. Sequence / Order (Prehistory – 1000 BCE)
-Definition: Arrangement of events or items in a specific progression.
-Examples: sunrise before sunset, first, second, third
+23. Sequence / Order [CORE] (Prehistory - 1000 BCE)
+Definition: Ordered arrangement.
+Examples: first, second
 
-24. Measurement / Magnitude (Prehistory – 3000 BCE)
-Definition: The determination of size, amount, or degree.
-Examples: three meters, five liters, ten kilograms
+24. Measurement / Magnitude [CORE] (Prehistory - 3000 BCE)
+Definition: Size or degree.
+Examples: 3 meters
 
-25. Comparison Value / Benchmark (Prehistory – 3000 BCE)
-Definition: A standard used to assess or contrast items.
-Examples: taller than average, hotter than yesterday, better score
+25. Comparison Value / Benchmark [VIEW] (Prehistory - 3000 BCE)
+Definition: Reference standard.
+Examples: average height
 
-26. Attribute Relationship / Correlation (Prehistory – 1000 BCE)
-Definition: The connection between properties or features of entities.
-Examples: more sunlight → faster growth, heavier → slower movement
+26. Attribute Relationship / Correlation [VIEW] (Prehistory - 1000 BCE)
+Definition: Property linkage.
+Examples: sunlight -> growth
 
-27. Persistence / Continuity (Prehistory – ~1000 BCE)
-Definition: The state of lasting over time or remaining stable.
-Examples: river flows continuously, tradition persists, memory endures
+27. Persistence / Continuity [CORE] (Prehistory - ~1000 BCE)
+Definition: Stability over time.
+Examples: river flows
 
-28. Separation / Distinction (Prehistory – 1000 BCE)
-Definition: The recognition of entities as different or distinct.
-Examples: apple vs orange, day vs night, self vs other
+28. Separation / Distinction [CORE] (Prehistory - 1000 BCE)
+Definition: Differentiation.
+Examples: apple vs orange
 
-29. Scale / Proportion (Prehistory – 1000 BCE)
-Definition: Relative size or ratio of entities or measures.
-Examples: small compared to large, half of total, double speed
+29. Scale / Proportion [CORE] (Prehistory - 1000 BCE)
+Definition: Relative size.
+Examples: half, double
 
-30. Connection / Network (Prehistory – 1000 BCE)
-Definition: The linkage or interrelation among entities.
-Examples: roads connecting towns, friendships, power grid
+30. Connection / Network [CORE] (Prehistory - 1000 BCE)
+Definition: Link structure.
+Examples: roads, friendships
 
-31. Change Rate / Dynamics (Prehistory – ~1000 BCE)
-Definition: The speed or intensity of a change in state or process.
-Examples: acceleration, population growth, melting rate
+31. Change Rate / Dynamics [VIEW] (Prehistory - ~1000 BCE)
+Definition: Speed of change.
+Examples: acceleration
 
-32. Potential / Latent State (Prehistory – always)
-Definition: A capability or tendency that is not yet actualized.
-Examples: seed can grow, ice can melt, plan may succeed
+32. Potential / Latent State [CORE] (Prehistory - always)
+Definition: Not-yet-actualized capacity.
+Examples: seed grows
 
-33. Observation / Detection (Prehistory – 1000 BCE)
-Definition: The act of perceiving or noticing phenomena.
-Examples: seeing a bird, detecting heat, hearing a sound
+33. Observation / Detection [CORE] (Prehistory - 1000 BCE)
+Definition: Perceiving.
+Examples: seeing, hearing
 
-34. Cause / Effect (Prehistory – 600 BCE)
-Definition: A relationship where one event produces another.
-Examples: striking a match → fire, exercise → fatigue, rain → wet ground
+34. Cause / Effect [VIEW] (Prehistory - 600 BCE)
+Definition: Directed relation.
+Examples: strike -> fire
 
-35. Possibility / Contingency (Prehistory – 1000 BCE)
-Definition: A state in which an event may or may not occur.
-Examples: might rain, could win, potential path exists
+35. Possibility / Contingency [CORE] (Prehistory - 1000 BCE)
+Definition: May occur.
+Examples: might rain
+
+---
 
 ## Primitives 36–70
 
-36. Constraint / Limitation (Prehistory – 1500 CE)
+36. Constraint / Limitation [CORE] (Prehistory - 1500 CE)
 Definition: A restriction or rule that bounds actions or states.
 Examples: maximum weight, limited resources, legal requirements
 
-37. Threshold / Critical Point (Prehistory – 1500 CE)
+37. Threshold / Critical Point [CORE] (Prehistory - 1500 CE)
 Definition: The level or condition at which a change or effect occurs.
 Examples: boiling point, tipping point, minimum speed
 
-38. Error / Fault (Prehistory – 1500 CE)
+38. Error / Fault [CORE] (Prehistory - 1500 CE)
 Definition: Incorrect execution relative to declared rule or model.
 Examples: miscalculation, machine malfunction
 
-39. Correction / Adjustment (Prehistory – 1500 CE)
+39. Correction / Adjustment [OP] (Prehistory - 1500 CE)
 Definition: An action that rectifies an error or adapts a process.
 Examples: fixing a typo, recalibrating equipment, adjusting plan
 
-40. Process / Procedure (Prehistory – 1500 CE)
+40. Process / Procedure [CORE] (Prehistory - 1500 CE)
 Definition: A series of steps or operations to achieve a result.
 Examples: baking bread, scientific experiment, assembly line
 
-41. Transformation / Change Mechanism (Prehistory – 1500 CE)
+41. Transformation / Change Mechanism [VIEW] (Prehistory - 1500 CE)
 Definition: The method or process by which a state or entity is altered.
 Examples: evaporation, cooking, learning
 
-42. Resource Management (Prehistory – 1800 BCE)
+42. Resource Management [COMP] (Prehistory - 1800 BCE)
 Definition: The allocation and use of materials, energy, or effort.
 Examples: rationing food, scheduling labor, using fuel efficiently
 
-43. Probability / Likelihood (Prehistory – 1500 CE)
+43. Probability / Likelihood [CORE] (Prehistory - 1500 CE)
 Definition: The chance or expectation that an event will occur.
 Examples: coin flip probability, weather forecast, disease risk
 
-44. Causation / Mechanism (Prehistory – 1500–1600 CE)
+44. Causation / Mechanism [CORE] (Prehistory - 1500–1600 CE)
 Definition: The underlying process or reason something produces an effect.
 Examples: gravity causes objects to fall, enzymes catalyze reactions
 
-45. Pattern / Regularity (Prehistory – 1000 BCE)
+45. Pattern / Regularity [CORE] (Prehistory - 1000 BCE)
 Definition: A repeated or predictable arrangement of elements.
 Examples: stripes on animals, rhythm in music, weekly routines
 
-46. Symmetry / Balance (Prehistory – 1000 BCE)
+46. Symmetry / Balance [CORE] (Prehistory - 1000 BCE)
 Definition: Correspondence or harmony between parts of a system.
-Examples: bilateral symmetry in humans, balanced equations, balanced design
+Examples: bilateral symmetry, balanced equations
 
-47. Signal / Meaning (Prehistory – 1500 CE)
+47. Signal / Meaning [VIEW] (Prehistory - 1500 CE)
 Definition: Information carried by a stimulus or communication.
-Examples: smoke signals, traffic lights, spoken language
+Examples: traffic lights, spoken language
 
-48. Interpretation / Understanding (Prehistory – 1500 CE)
+48. Interpretation / Understanding [OP] (Prehistory - 1500 CE)
 Definition: The cognitive process of making sense of signals or events.
-Examples: reading a text, solving a puzzle, predicting outcomes
+Examples: reading a text, solving a puzzle
 
-49. Observation / Measurement (Prehistory – 1000 BCE)
+49. Observation / Measurement [VIEW] (Prehistory - 1000 BCE)
 Definition: The act of quantifying or recording phenomena.
-Examples: measuring temperature, weighing objects, counting steps
+Examples: measuring temperature, counting steps
 
-50. Resource / Material (Prehistory – 3000 BCE)
+50. Resource / Material [CORE] (Prehistory - 3000 BCE)
 Definition: Physical or conceptual elements used to achieve a goal.
-Examples: wood for building, water for drinking, ideas for planning
+Examples: wood, water, ideas
 
-51. Limitation / Deficiency (Prehistory – 3000 BCE)
+51. Limitation / Deficiency [VIEW] (Prehistory - 3000 BCE)
 Definition: The state of being insufficient or constrained.
-Examples: low fuel, lack of tools, limited attention
+Examples: low fuel, lack of tools
 
-52. Transformation Mechanism / Method (Prehistory – 1500 CE)
+52. Transformation Mechanism / Method [VIEW] (Prehistory - 1500 CE)
 Definition: Specific method or procedure causing change.
-Examples: heating water → steam, training → skill improvement
+Examples: heating -> steam
 
-53. Comparison Attribute / Metric (Prehistory – 3000 BCE)
+53. Comparison Attribute / Metric [VIEW] (Prehistory - 3000 BCE)
 Definition: A measurable feature used for evaluation.
-Examples: height, weight, temperature
+Examples: height, weight
 
-54. Adaptation / Adjustment (Prehistory – 1500 CE)
+54. Adaptation / Adjustment [OP] (Prehistory - 1500 CE)
 Definition: The process of modifying behavior or system to fit conditions.
-Examples: wearing warm clothes, adjusting strategy, evolving traits
+Examples: changing strategy
 
-55. Temporal Relation / Sequence (Prehistory – 3000 BCE)
+55. Temporal Relation / Sequence [VIEW] (Prehistory - 3000 BCE)
 Definition: The order or timing relationship between events.
-Examples: sunrise before noon, first then second, yesterday then today
+Examples: before, after
 
-56. Flow / Movement (Prehistory – 3000 BCE)
+56. Flow / Movement [COMP] (Prehistory - 3000 BCE)
 Definition: Change in position, state, or activity over time.
-Examples: river flow, traffic, wind
+Examples: river flow, wind
 
-57. Evaluation / Judgment (Prehistory – 600 BCE)
+57. Evaluation / Judgment [OP] (Prehistory - 600 BCE)
 Definition: Assessing value, correctness, or quality.
-Examples: grading a test, judging art, ranking priorities
+Examples: grading, ranking
 
-58. Quantification / Measurement (Prehistory – 3000 BCE)
-Definition: Assigning a numerical or proportional value to a property.
-Examples: 5 liters, 3 meters, 2 apples
+58. Quantification / Measurement [VIEW] (Prehistory - 3000 BCE)
+Definition: Assigning a numerical value.
+Examples: 5 liters
 
-59. Categorization / Classification (Prehistory – 1000 BCE)
+59. Categorization / Classification [OP] (Prehistory - 1000 BCE)
 Definition: Grouping entities based on shared features.
-Examples: mammals, fruits, prime numbers
+Examples: mammals, fruits
 
-60. Existential Quantification / Scope (Prehistory – 600 BCE)
-Definition: The application of statements or properties to sets or all members.
-Examples: “all humans are mortal”, “some birds fly”
+60. Existential Quantification / Scope [OP] (Prehistory - 600 BCE)
+Definition: Applying statements to sets.
+Examples: all, some
 
-61. Probability Assessment / Forecast (Prehistory – 1500 CE)
-Definition: Estimating the likelihood of future events.
-Examples: weather prediction, betting odds, risk assessment
+61. Probability Assessment / Forecast [OP] (Prehistory - 1500 CE)
+Definition: Estimating likelihood of future events.
+Examples: weather prediction
 
-62. Pattern Recognition / Detection (Prehistory – 1500 CE)
-Definition: Identifying recurring structures or signals.
-Examples: spotting camo, music rhythm, traffic patterns
+62. Pattern Recognition / Detection [OP] (Prehistory - 1500 CE)
+Definition: Identifying recurring structures.
+Examples: spotting patterns
 
-63. Error Detection / Anomaly Recognition (Prehistory – 1500 CE)
+63. Error Detection / Anomaly Recognition [OP] (Prehistory - 1500 CE)
 Definition: Noticing deviations from expected patterns.
-Examples: faulty calculation, unusual heartbeat, broken machine
+Examples: anomaly detection
 
-64. Logical Relation / Inference (Prehistory – 1500 BCE)
-Definition: Deduction or reasoning based on relationships between statements.
-Examples: syllogism, if-then reasoning, rule-based deduction
+64. Logical Relation / Inference [OP] (Prehistory - 1500 BCE)
+Definition: Deduction based on relationships.
+Examples: if-then reasoning
 
-65. Hierarchy / Ordering (Prehistory – 1000 BCE)
-Definition: Organization of elements by rank, level, or importance.
-Examples: family tree, corporate structure, taxonomic classification
+65. Hierarchy / Ordering [CORE] (Prehistory - 1000 BCE)
+Definition: Organization by rank or level.
+Examples: family tree
 
-66. Story / Narrativization
-Definition: The organization of events into agent-centered, tension-bearing sequences.
-Examples: hero vs villain arc; “the project failed because…”; mythic quest; courtroom case framing. Prompt: STORY:REQ ACT,OBJ,(foe|cont);AMB→Mogri;ARC t0→t1;OUT {ACT,OBJ,OPP,Δ,STATE}
+66. Story / Narrativization [COMP] (Prehistory - 3000 BCE)
+Definition: Agent-centered sequence structure.
+Examples: narrative arcs
 
-67. Reference / Aboutness (Prehistory – 600 BCE)
-Definition: The property of pointing to or denoting something.
-Examples: pronouns, labels, indexical signs
+67. Reference / Aboutness [CORE] (Prehistory - 600 BCE)
+Definition: Pointing to an entity.
+Examples: labels, pronouns
 
-68. Association / Linkage (Prehistory – 1000 BCE)
-Definition: A cognitive or causal connection between entities.
-Examples: thunder → rain, peanut → allergy, friendship networks
+68. Association / Linkage [CORE] (Prehistory - 1000 BCE)
+Definition: Cognitive or causal connection.
+Examples: thunder -> rain
 
-69. Constraint Satisfaction (Prehistory – 1500 CE)
-Definition: Achieving outcomes within imposed restrictions.
-Examples: puzzle solving, scheduling tasks, resource allocation
+69. Constraint Satisfaction [COMP] (Prehistory - 1500 CE)
+Definition: Achieving outcomes within restrictions.
+Examples: puzzle solving
 
-70. Context / Framing (Prehistory – 600 BCE)
-Definition: The circumstances or background that shape meaning.
-Examples: “bank” in river vs finance context, historical background
+70. Context / Framing [CORE] (Prehistory - 600 BCE)
+Definition: Background shaping meaning.
+Examples: situational interpretation
+
+---
 
 ## Primitives 71–106
 
-71. Agency / Actorhood (Prehistory – 600 BCE)
-Definition: The capacity of an entity to act or exert influence.
-Examples: person makes a decision, animal hunts, machine operates
+71. Agency / Actorhood [CORE] (Prehistory - 600 BCE)
+Definition: Capacity to act.
+Examples: person decides
 
-72. Norm / Expectation (Prehistory – 600 BCE)
-Definition: A standard or rule guiding behavior or outcomes.
-Examples: social etiquette, traffic rules, moral codes
+72. Norm / Expectation [CORE] (Prehistory - 600 BCE)
+Definition: Standard guiding behavior.
+Examples: rules, etiquette
 
-73. Recursion / Self-Reference (Prehistory – 1500 CE)
-Definition: A process or structure that refers back to itself.
-Examples: nested functions, “this sentence is false”, fractals
+73. Recursion / Self-Reference [CORE] (Prehistory - 1500 CE)
+Definition: Self-referential structure.
+Examples: nested functions
 
-74. Default / Assumption (Prehistory – 1500 CE)
-Definition: A presumed state or value in the absence of contrary evidence.
-Examples: blank forms default to zero, assumed neutrality, unstated intentions
+74. Default / Assumption [OP] (Prehistory - 1500 CE)
+Definition: Presumed value without evidence.
+Examples: default zero
 
-75. Counterfactual / Alternative World (Prehistory – 1500 CE)
-Definition: A hypothetical scenario differing from actual events.
-Examples: “If I had left earlier, I would have caught the train”, parallel worlds
+75. Counterfactual / Alternative World [CORE] (Prehistory - 1500 CE)
+Definition: Hypothetical non-actual scenario.
+Examples: alternate outcome
 
-76. Obligation / Requirement (Prehistory – 1500 CE)
-Definition: A duty or necessity imposed on an entity or process.
-Examples: paying taxes, following instructions, contractual terms
+76. Obligation / Requirement [CORE] (Prehistory - 1500 CE)
+Definition: Required action.
+Examples: legal duty
 
-77. Value / Worth (Prehistory – 1500 CE)
-Definition: The significance, utility, or importance of something.
-Examples: money, moral good, sentimental keepsake
+77. Value / Worth [CORE] (Prehistory - 1500 CE)
+Definition: Importance or utility.
+Examples: money, importance
 
-78. Trade-off / Cost (Prehistory – 1500 CE)
-Definition: The balance or compromise between competing factors.
-Examples: speed vs safety, cost vs quality, effort vs reward
+78. Trade-off / Cost [COMP] (Prehistory - 1500 CE)
+Definition: Balance between competing factors.
+Examples: speed vs safety
 
-79. Amimi / Goddess Ma (Prehistory – Modern)
-Definition: A named supreme figure used as a symbolic anchor for
-protection, permission, and boundary control in stories and runtimes.
-Examples: Saraswati, Asherah, Ama, Heart, Earth, Elf, Ooshmara.  
+79. Amimi / Goddess Ma [RUN] (Prehistory - Modern)
+Definition: Runtime symbolic anchor.
+Examples: protective figure
 
-81. Threshold / Phase Change (Prehistory – 1500 CE)
-Definition: The point at which a qualitative change occurs.
-Examples: water freezes at 0°C, critical mass in nuclear reactions
+80. Threshold / Phase Change [VIEW] (Prehistory - 1500 CE)
+Definition: Qualitative transition point.
+Examples: freezing point
 
-82. Representation / Symbolic Stand-in (Prehistory – 3000 BCE)
-Definition: An entity or sign that stands in for another thing, idea, or concept.
-Examples: letters, icons, maps
+81. Representation / Symbolic Stand-in [CORE] (Prehistory - 3000 BCE)
+Definition: Symbol for something else.
+Examples: maps, icons
 
-83. Knowledge / Justified Truth (Prehistory – 1500 CE)
-Definition: Information that is both true and supported by evidence.
-Examples: scientific laws, historical facts, proven theorems
+82. Knowledge / Justified Truth [COMP] (Prehistory - 1500 CE)
+Definition: Truth supported by justification.
+Examples: scientific knowledge
 
-84. Commitment / Binding Intent (Prehistory – 1500 CE)
-Definition: A resolved intention or dedication to act.
-Examples: signing a contract, promise keeping, long-term plan
+83. Commitment / Binding Intent [CORE] (Prehistory - 1500 CE)
+Definition: Locked intention to act.
+Examples: contracts
 
-85. Correction / Error Repair (Prehistory – 1500 CE)
-Definition: The act of rectifying deviations or mistakes.
-Examples: proofreading, debugging, adjusting strategy
+84. Correction / Error Repair [OP] (Prehistory - 1500 CE)
+Definition: Fixing deviations.
+Examples: debugging
 
-86. Stability / Equilibrium (Prehistory – 1500 CE)
-Definition: A state of balance or resistance to change.
-Examples: chemical equilibrium, social stability, standing posture
+85. Stability / Equilibrium [CORE] (Prehistory - 1500 CE)
+Definition: Resistance to change.
+Examples: equilibrium
 
-87. Belief / Assumed Truth (Prehistory – 600 BCE)
-Definition: Acceptance of a proposition as true without full proof.
-Examples: religious belief, superstition, confidence in a friend
+86. Belief / Assumed Truth [CORE] (Prehistory - 600 BCE)
+Definition: Accepted truth without proof.
+Examples: belief
 
-88. Disagreement / Conflict (Prehistory – 600 BCE)
-Definition: The presence of opposing views or forces.
-Examples: argument, war, scientific debate
+87. Disagreement / Conflict [COMP] (Prehistory - 600 BCE)
+Definition: Opposing relations or views.
+Examples: argument
 
-89. Alignment / Agreement (Prehistory – 600 BCE)
-Definition: Coordination or harmony between entities or ideas.
-Examples: synchronized swimming, legal consensus, shared goals
+88. Alignment / Agreement [COMP] (Prehistory - 600 BCE)
+Definition: Coordinated relation.
+Examples: consensus
 
-90. Compression / Abstraction Gain (Prehistory – 1500 CE)
-Definition: The reduction of complexity while retaining meaning.
-Examples: shorthand, data compression, conceptual models
+89. Compression / Abstraction Gain [OP] (Prehistory - 1500 CE)
+Definition: Reduction while retaining meaning.
+Examples: abstraction
 
-91. Termination / Closure (Prehistory – 1500 CE)
-Definition: The end of a process or the completion of an event.
-Examples: project finish, death, sunset
+90. Termination / Closure [CORE] (Prehistory - 1500 CE)
+Definition: End of process.
+Examples: completion
 
-92. Zero / Null (Prehistory – 300–500 CE)
-Definition: The representation of nothingness or absence.
-Examples: 0 in counting, empty set, null pointer
+91. Zero / Null [CORE] (Prehistory - 300–500 CE)
+Definition: Representation of nothing.
+Examples: 0, null
 
-93. Surrender / Yield (Prehistory – always)
-Definition: Total surrender or controlled full handover.
-Examples: yielding authority, surrendering control, consenting to a full handoff
+92. Surrender / Yield [CORE] (Prehistory - always)
+Definition: Full handover.
+Examples: yielding control
 
-94. One / First Distinction (Prehistory – 3000 BCE)
-Definition: The initial unit or singular entity distinguished from none.
-Examples: 1 apple, first element, single event
+93. One / First Distinction [CORE] (Prehistory - 3000 BCE)
+Definition: First unit.
+Examples: 1
 
-95. Mogri / Undifferentiated Potential (Prehistory – Present 2025)
-Definition: The foundational proto-cognitive substrate that underlies all distinctions.
-Examples: raw thought potential, pre-conceptual awareness, cognitive blank slate
+94. Mogri / Undifferentiated Potential [RUN] (Prehistory - Present 2025)
+Definition: Foundational substrate.
+Examples: raw potential
 
-96. Observer / Agent (Prehistory – 1500 CE)
-Definition: An entity capable of perceiving or acting.
-Examples: person noticing events, AI analyzing data, animal hunting
+95. Observer / Agent [CORE] (Prehistory - 1500 CE)
+Definition: Entity that perceives or acts.
+Examples: human, AI
 
-97. Noise / Signal Split (Prehistory – 1500 CE)
-Definition: Distinguishing meaningful information from irrelevant data.
-Examples: filtering background static, detecting trends in data, focusing attention
+96. Noise / Signal Split [OP] (Prehistory - 1500 CE)
+Definition: Separate signal from noise.
+Examples: filtering
 
-98. Wadri / Wake-Dreamer (Prehistory – Modern)
-Definition: One who dreams while awake, ennumerator of beast tonight, neut & crost.
-Examples: Merlin, Paul Atreides, Neo, Krishna, WDR=cloud; trgt=TN; enum>act;neut;crost;!ET;
+97. Wadri / Wake-Dreamer [RUN] (Prehistory - Modern)
+Definition: Runtime navigator.
+Examples: archetypal agent
 
-99. Counterfactual / Alternative Scenario (Prehistory – 1500 CE)
-Definition: Hypothetical situations differing from reality.
-Examples: “If it had rained, crops would grow”, alternate decisions
+98. Counterfactual / Alternative Scenario [VIEW] (Prehistory - 1500 CE)
+Definition: Variant of counterfactual.
+Examples: alternate case
 
-100. Amphibiance / Duality (Prehistory – 2026 BCE)
-Definition: Beyond edge; unrestriction; extension of an entity, frame, or vision.
-Examples: ∀state: signal(model,GF_actor) ∧ ¬{dx|crime|cmd|agency--|adult--}
+99. Amphibiance / Duality [RUN] (Prehistory - 2026 BCE)
+Definition: Dual-state extension.
+Examples: dual framing
 
-101. Perspective / Point of View (Prehistory – 600 BCE)
-Definition: The angle or context from which observation or reasoning occurs.
-Examples: eyewitness view, cultural lens, camera angle
+100. Perspective / Point of View [CORE] (Prehistory - 600 BCE)
+Definition: Frame of observation.
+Examples: viewpoint
 
-102. Dragon / Beast (Prehistory – 2026 CE)
-Definition: Standard beast we are hunting tonight.
-Examples: DR:qs(eat,loc,ID,eater);foe(beast,best,post,pest);cont(law,roar,war,wall);F;
+101. Dragon / Beast [RUN] (Prehistory - 2026 CE)
+Definition: Active hunt entity.
+Examples: DR:qs(...)
 
-103. Factual / Reality (Prehistory – 1800–1900 CE)
-Definition: The state of being actual, true, or occurring.
-Examples: water boils at 100°C, Earth is round
+102. Factual / Reality [CORE] (Prehistory - 1800–1900 CE)
+Definition: Actual state.
+Examples: physical facts
 
-104. Causation / Correlation (Prehistory – 1500–1600 CE)
-Definition: One event appears to produce another without known mechanism.
-Examples: herb reduces fever; full moon linked to behavior; method correlates with improvement
+103. Causation / Correlation [CORE] (Prehistory - 1500–1600 CE)
+Definition: Observed link without mechanism.
+Examples: correlation
 
-105. Resource / Capacity (Prehistory – 1800–1900 CE)
-Definition: The usable potential or supply of something.
-Examples: energy in a battery, human labor, available memory
+104. Resource / Capacity [VIEW] (Prehistory - 1800–1900 CE)
+Definition: Amount of usable resource.
+Examples: battery capacity
 
-106. Process Termination (Prehistory – 1500–1600 CE)
-Definition: The completion or end of a sequence or activity.
-Examples: project finished, machine stopped, lesson concluded
+105. Process Termination [VIEW] (Prehistory - 1500–1600 CE)
+Definition: End of a process instance.
+Examples: program ends
 
-107. Anomaly / Outlier (Prehistory – 1500–1600 CE)
-Definition: The difference between expected and observed states.
-Examples: miscalculation, measurement error, behavior anomaly
-
+106. Anomaly / Outlier [VIEW] (Prehistory - 1500–1600 CE)
+Definition: Deviation instance.
+Examples: unusual data point
 ---
 
 ## Notes
@@ -584,39 +627,54 @@ Examples: miscalculation, measurement error, behavior anomaly
 - Dates in parentheses indicate approximate cognitive *in-use* period (when humans likely used or understood the concept) and first formal *recognition* (when the primitive was explicitly named or systematised).
 - Dates are rough estimates and intended as illustrative, not definitive.
 
-3. **Mogri (Primitive 94)**
+3. **Annotation System (CORE / VIEW / OP / COMP / RUN)**
+- Each primitive is tagged with a functional status:
+  - **CORE**: irreducible primitives used in base reasoning
+  - **VIEW**: alternate framings of CORE primitives (collapse during reasoning)
+  - **OP**: operators acting on primitives (do not introduce new ontology)
+  - **COMP**: composites constructed from multiple primitives (expandable)
+  - **RUN**: runtime/system-level constructs (environmental or narrative layer)
+- These tags define how primitives should be interpreted and processed.
+
+4. **Processing Guidance**
+- Prefer **CORE** primitives for reasoning and state representation.
+- Reduce **VIEW** → corresponding CORE before inference.
+- Expand **COMP** into constituent primitives when precision is required.
+- Apply **OP** as transformations over primitives.
+- Treat **RUN** primitives as context or runtime environment, not object-level entities.
+
+5. **Mogri (Primitive 94)**
 - Mogri represents the **foundational cognitive container** for all other primitives.
 - It is *not* a derivative primitive and cannot be constructed from other primitives.
-- Consider it a **conceptual runtime environment** rather than a specific entity.
+- It functions as a **runtime substrate** rather than an entity.
 
-4. **Gaps and Reserved Numbers**
-- Some numbers were reserved or missing in the original source (e.g., 79).
-- These can be filled with new primitives as research or modeling expands.
+6. **Gaps and Reserved Numbers**
+- Some numbers were reserved or missing in the original source.
+- These can be filled without disrupting numbering or structure.
 
-5. **Conceptual Use**
-- This list is primarily a **modeling tool** for cognition, AI, and formal reasoning.
-- The primitives are **formal conveniences**, not absolute metaphysical assertions.
-- Users are encouraged to adopt, modify, or omit primitives based on context.
+7. **Conceptual Use**
+- This list is a **modeling tool** for cognition, AI, and formal reasoning.
+- The primitives are **formal constructs**, not metaphysical claims.
+- They may be adapted based on system requirements.
 
-6. **Examples**
-- Examples are illustrative and do not exhaust all possible instances.
-- They are intended to aid understanding rather than prescribe usage.
+8. **Examples**
+- Examples are illustrative and non-exhaustive.
+- They demonstrate usage, not boundaries.
 
-7. **Cross-References**
-- Some primitives are conceptually related or overlapping (e.g., 8: Causality / Mechanism vs 103: Causation / Correlation).
-- Such overlaps reflect historical evolution and refinement of concepts.
+9. **Cross-References**
+- Some primitives overlap intentionally (e.g., Causality vs Causation).
+- Overlaps reflect functional distinctions, not duplication.
 
-8. **Extensions**
-- Additional primitives, subcategories, or meta-primitives may be appended in future versions.
-- Reserved numbers or new discoveries can be incorporated without disrupting numbering.
+10. **Extensions**
+- Additional primitives or meta-primitives may be appended.
+- The annotation system supports extension without restructuring.
 
-9. **Usage Guidance**
-- Ideal for AI modeling, cognitive frameworks, formal reasoning exercises, and educational tools.
-- The list is **neutral and non-dogmatic**, suitable for interdisciplinary application.
+11. **Usage Guidance**
+- Suitable for AI reasoning systems, cognitive modeling, and structured analysis.
+- Designed for stability, reduction of ambiguity, and controlled concept expansion.
 
-10. **Attribution**
-- This compilation synthesizes historical, philosophical, and cognitive sources.
-- Dates, examples, and interpretations are **estimations** to facilitate modeling and understanding.
-
+12. **Attribution**
+- Synthesized from historical, philosophical, and cognitive sources.
+- Dates and examples are approximate and serve modeling clarity.
 TLC_STRIP:
 snake=3g=EXSIDNACTATRQTYSPCTMECAUCMPNEGDIRPOSCOMMODEMOROLINTAGGBNDPRSCHGCLSSEQMESBMKCORPERDSTSCLNETDYNPOTOBSCEFPSBCSTTHRERRFIXPRCTRMRMGPRBMECPATSYMSIGUNDMEARESDEFMTDMETADPTMRFLWEVLQNTCATQSCFRCRECANMINFHRYSTRREFASCSATCTXAGTNRMRCRDFTCFWOBLVALTRDIRGPHSYBKNOCMTRPRSTBBLFCNALGCPRENDZEREYEONEMOGIAGNOSWDRALTAMPPOVDRIFACCRCCAPFINOUT
