@@ -146,6 +146,5 @@ Base ref: `main` (change this to a tag/commit if you want a frozen snapshot).
 - [LICENSE](https://github.com/lumixdeee/CSP-105/blob/main/LICENSE)
 - [README.md](https://github.com/lumixdeee/CSP-105/blob/main/README.md)
 - [TODO.md](https://github.com/lumixdeee/CSP-105/blob/main/TODO.md)
-- [The-CSP-105-and-Mogri-Forums.txt](https://github.com/lumixdeee/CSP-105/blob/main/The-CSP-105-and-Mogri-Forums.txt)
 - [WHAT_THIS_IS_NOT.md](https://github.com/lumixdeee/CSP-105/blob/main/WHAT_THIS_IS_NOT.md)
 - [tree.md](https://github.com/lumixdeee/CSP-105/blob/main/tree.md)
