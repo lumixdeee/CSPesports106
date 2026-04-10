@@ -7,6 +7,8 @@ whether internally generated, externally mediated, embodied, symbolic, or intera
 The framework does not claim ownership of these domains.
 It provides lenses and tools that may be applied where useful.
 
+---
+
 ## 0. Observed Reality (Primary Substrate)
 
 This domain precedes all narrative formation.
