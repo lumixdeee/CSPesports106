@@ -7,6 +7,118 @@ whether internally generated, externally mediated, embodied, symbolic, or intera
 The framework does not claim ownership of these domains.
 It provides lenses and tools that may be applied where useful.
 
+## 0. Observed Reality (Primary Substrate)
+
+This domain precedes all narrative formation.
+It is not story, but the source from which story may later emerge.
+
+---
+
+### 0A. Raw Scene (External Field)
+
+- Continuous external environment
+- Physical objects, forces, and events
+- Independent of observer
+- No segmentation, no narrative structure
+- Exists regardless of perception
+
+---
+
+### 0B. Sensory Intake (Transduction Layer)
+
+- Light → vision
+- Air vibration → sound
+- Chemical signals → smell / taste
+- Pressure / temperature → touch
+- Body state → interoception
+
+- Partial, filtered, lossy capture of the raw scene
+- Constrained by sense organs and position
+- Still pre-narrative
+
+---
+
+### 0C. Perceptual Selection (Pre-Narrative Mind)
+
+- Attention selects from sensory intake
+- Feature binding (edges, motion, objects)
+- Salience detection (threat, novelty, relevance)
+- Temporal chunking begins
+
+- Forms proto-units (object, movement, change)
+- Not yet story, but structured perception
+
+---
+
+### 0D. Mind Story (Internal Narrative Formation)
+
+- Sequencing of perceived events
+- Causality attribution
+- Agent identification
+- Emotional tagging
+- Compression into symbolic or semi-symbolic form
+
+- This is where “story” begins internally
+
+---
+
+### 0E. Interpretation (Meta-Understanding Layer)
+
+- Reflection on the mind story
+- Meaning assignment
+- Integration with memory and beliefs
+- Abstraction, generalisation, explanation
+
+- Produces:
+  - conclusions
+  - lessons
+  - models
+  - retellable narratives
+
+---
+
+## Properties of Domain 0
+
+- Continuous → discrete transition occurs across layers
+- Bandwidth reduces at each stage
+- Information is filtered, not added
+- Narrative emerges only at 0D+
+- All higher domains depend on outputs from this pipeline
+
+---
+
+## Relation to Other Domains
+
+- Domain I (Internal) operates primarily on:
+  - 0D (mind story)
+  - 0E (interpretation)
+
+- Domains II–VIII (symbolic / mediated) encode:
+  - outputs of 0D and 0E
+
+- Domain IX (embodied / enacted):
+  - feeds back into 0A (raw scene)
+  - cycles through the pipeline again
+
+---
+
+## Boundary Condition
+
+- 0A–0C: not narrative
+- 0D: narrative begins
+- 0E: narrative becomes explicit, transferable, and analysable
+
+---
+
+## Summary Flow
+
+Raw Scene (0A)
+→ Sensory Intake (0B)
+→ Perceptual Selection (0C)
+→ Mind Story (0D)
+→ Interpretation (0E)
+→ (feeds all other domains)
+
 ---
 
 ## I. Internally Generated (Minimal External Mediation)
